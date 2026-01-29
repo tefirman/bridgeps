@@ -1,0 +1,58 @@
+{{ define "main" }}
+<main class="homepage">
+  <section class="hero">
+    <div class="hero_content">
+      {{ with .Site.Params.logo }}
+      <img src="{{ . | relURL }}" alt="{{ $.Site.Title }} logo" class="hero_logo">
+      {{ end }}
+      <h1>{{ .Site.Title }}</h1>
+      <p class="hero_tagline">{{ .Site.Params.introDescription }}</p>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="intro_content">
+      <h2>Our Mission</h2>
+      <p>Bridge Public Schools is a nonprofit public charter school network committed to <strong>proving the possible</strong>. We provide high-expectations, tuition-free, open-enrollment public schools in historically underserved communities that prepare every student for success in college and life.</p>
+    </div>
+  </section>
+
+  <section class="links">
+    <div class="links_grid">
+      <a href="{{ "about/" | relURL }}" class="link_card">
+        <h3>About Us</h3>
+        <p>Learn about our mission, values, and leadership team.</p>
+      </a>
+      <a href="{{ "academics/programs/" | relURL }}" class="link_card">
+        <h3>Academics</h3>
+        <p>Explore our rigorous academic programs.</p>
+      </a>
+      <a href="{{ "admissions/" | relURL }}" class="link_card">
+        <h3>Admissions</h3>
+        <p>Find out how to enroll your child.</p>
+      </a>
+      <a href="{{ "contact/" | relURL }}" class="link_card">
+        <h3>Contact</h3>
+        <p>Get in touch with our team.</p>
+      </a>
+    </div>
+  </section>
+
+  {{ with (where .Site.RegularPages "Section" "news") }}
+  {{ if gt (len .) 0 }}
+  <section class="news_preview">
+    <h2>Latest News</h2>
+    <ul>
+      {{ range first 3 . }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <span class="news_date">{{ .Date.Format "January 2, 2006" }}</span>
+      </li>
+      {{ end }}
+    </ul>
+    <p><a href="{{ "news/" | relURL }}">View all news &rarr;</a></p>
+  </section>
+  {{ end }}
+  {{ end }}
+</main>
+{{ end }}

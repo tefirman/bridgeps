@@ -1,0 +1,53 @@
+# Site Parameters
+enableSearch = true
+
+# Site description (for SEO)
+description = "Bridge Public Schools - Proving the possible. High-expectations, tuition-free public schools preparing every student for success in college and life."
+keywords = ["charter school", "public school", "education", "bridge public schools", "washington", "college prep"]
+
+# Intro section on homepage
+introDescription = "Proving the possible. Every child. College bound."
+
+# Logo (place your logo in static/logos/)
+logo = "logos/logo.png"
+centerLogo = false
+
+# Social media sharing image
+fallBackOgImage = "images/school-banner.png"
+
+# Directory settings
+imagesDir = "images/"
+iconsDir = "icons/"
+fontsDir = "fonts/"
+
+# Code display settings (for any code examples on the site)
+codeMaxLines = 10
+codeLineNumbers = false
+
+# Main content sections - "news" will be the blog/announcements section
+mainSections = ["news"]
+
+# Navigation position
+mobileNavigation = "left"
+
+# Light mode by default (better for school accessibility)
+enforceLightMode = false
+
+# Date format
+dateFormat = "January 2, 2006"
+
+# Disable comments (not needed for school site)
+comments = false
+
+# Blog directory for structured data
+blogDir = "news"
+
+# Hide footer logo
+footerLogo = ""
+
+# Don't show "since" year range in footer
+since = 2026
+
+# Author / School info
+[author]
+name = "Bridge Public Schools"

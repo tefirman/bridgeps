@@ -1,0 +1,11 @@
+{{- $s := .Site.Params }}
+{{- if or .Params.enableMathNotation $s.enableMathNotation }}
+  {{ partialCached "math" . }}
+{{- end }}
+<footer class="footer">
+  <div class="footer_inner wrap pale">
+    <img src='{{ absURL $s.logo }}' class="footer_logo" alt="{{ .Site.Title }}">
+    <p>&copy; 2026 Bridge Public Schools. All rights reserved.</p>
+    {{- partialCached "top" .}}
+  </div>
+</footer>

@@ -1,0 +1,55 @@
+# Main Navigation Menu
+
+[[main]]
+  name = "Home"
+  url = ""
+  weight = 10
+
+[[main]]
+  name = "About"
+  identifier = "about"
+  weight = 20
+
+[[main]]
+  parent = "about"
+  name = "Mission & Values"
+  url = "about/"
+  weight = 21
+
+[[main]]
+  parent = "about"
+  name = "Board of Directors"
+  url = "board/"
+  weight = 22
+
+[[main]]
+  name = "Academics"
+  identifier = "academics"
+  weight = 30
+
+[[main]]
+  parent = "academics"
+  name = "Programs"
+  url = "academics/programs/"
+  weight = 31
+
+[[main]]
+  parent = "academics"
+  name = "Curriculum"
+  url = "academics/curriculum/"
+  weight = 32
+
+[[main]]
+  name = "Admissions"
+  url = "admissions/"
+  weight = 40
+
+[[main]]
+  name = "News"
+  url = "news/"
+  weight = 50
+
+[[main]]
+  name = "Contact"
+  url = "contact/"
+  weight = 60
