@@ -23,26 +23,16 @@
   weight = 22
 
 [[main]]
-  name = "Academics"
-  identifier = "academics"
-  weight = 30
-
-[[main]]
-  parent = "academics"
+  parent = "about"
   name = "Programs"
   url = "academics/programs/"
-  weight = 31
+  weight = 23
 
 [[main]]
-  parent = "academics"
+  parent = "about"
   name = "Curriculum"
   url = "academics/curriculum/"
-  weight = 32
-
-[[main]]
-  name = "Admissions"
-  url = "admissions/"
-  weight = 40
+  weight = 24
 
 [[main]]
   name = "News"
