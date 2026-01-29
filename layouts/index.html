@@ -23,20 +23,20 @@
         <h3>About Us</h3>
         <p>Learn about our mission, values, and leadership team.</p>
       </a>
-      <a href="{{ "academics/programs/" | relURL }}" class="link_card">
-        <h3>Academics</h3>
-        <p>Explore our rigorous academic programs.</p>
-      </a>
-      <a href="{{ "admissions/" | relURL }}" class="link_card">
-        <h3>Admissions</h3>
-        <p>Find out how to enroll your child.</p>
-      </a>
       <a href="{{ "contact/" | relURL }}" class="link_card">
         <h3>Contact</h3>
         <p>Get in touch with our team.</p>
       </a>
     </div>
   </section>
+
+  {{ with .Content }}
+  <section class="page_content">
+    <div class="content_wrapper">
+      {{ . }}
+    </div>
+  </section>
+  {{ end }}
 
   {{ with (where .Site.RegularPages "Section" "news") }}
   {{ if gt (len .) 0 }}

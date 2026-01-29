@@ -13,25 +13,25 @@
 [[main]]
   parent = "about"
   name = "Mission & Values"
-  url = "about/"
+  url = "about/mission/"
   weight = 21
 
 [[main]]
   parent = "about"
   name = "Board of Directors"
-  url = "board/"
+  url = "about/board/"
   weight = 22
 
 [[main]]
   parent = "about"
   name = "Programs"
-  url = "academics/programs/"
+  url = "about/programs/"
   weight = 23
 
 [[main]]
   parent = "about"
   name = "Curriculum"
-  url = "academics/curriculum/"
+  url = "about/curriculum/"
   weight = 24
 
 [[main]]
