@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Our New Website!"
-date: 2025-01-28
+date: 2026-01-28
 description: "We're excited to launch our new school website."
 categories: ["Announcements"]
 tags: ["website", "news"]
