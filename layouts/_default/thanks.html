@@ -1,0 +1,23 @@
+{{ define "main" }}
+<main>
+  <section class="phero">
+    <div class="wrap">
+      <div class="crumbs"><a href="{{ "" | relLangURL }}">{{ T "crumb_home" }}</a> <span>/</span> <span>{{ T "thanks_crumb" }}</span></div>
+      <h1>{{ T "thanks_h1" }}</h1>
+      <p class="sub">{{ T "thanks_sub" }}</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap" style="text-align:center;padding-top:20px">
+      <div style="max-width:60ch;margin:0 auto">
+        <p class="prose" style="font-size:19px">{{ T "thanks_body" }}</p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:32px">
+          <a href="{{ "" | relLangURL }}" class="btn btn-primary">{{ T "thanks_btn_home" }} <span class="ar">→</span></a>
+          <a href="{{ "news/" | relLangURL }}" class="btn btn-outn">{{ T "thanks_btn_news" }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}

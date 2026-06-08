@@ -1,5 +1,5 @@
 # Site Configuration
-baseURL = "https://example.github.io/bridgeps/" # Update with your GitHub Pages URL
+baseURL = "https://bridgepublicschools.org/"
 title = "Bridge Public Schools"
 copyright = "© 2026 Bridge Public Schools. All rights reserved."
 

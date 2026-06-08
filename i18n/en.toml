@@ -23,3 +23,506 @@ other = "Latest News"
 
 [home_view_all_news]
 other = "View all news"
+
+# ── Shared shell (util bar, nav, footer) ──
+[site_description]
+other = "A tuition-free public charter school opening Fall 2027 in Yakima, Washington. Proving the possible — every child, college bound."
+
+[util_pill]
+other = "Now forming"
+
+[util_msg]
+other = "Opening Fall 2027 in Yakima, Washington · Founding grades K &amp; 6"
+
+[nav_about]
+other = "About"
+
+[nav_model]
+other = "Model"
+
+[nav_board]
+other = "Board"
+
+[nav_news]
+other = "News"
+
+[nav_contact]
+other = "Contact"
+
+[nav_cta]
+other = "Join the list"
+
+[footer_blurb]
+other = "A nonprofit public charter school opening Fall 2027 in Yakima, Washington — proving the possible for every student."
+
+[footer_explore]
+other = "Explore"
+
+[footer_mission]
+other = "Mission & Values"
+
+[footer_board]
+other = "Board of Directors"
+
+[footer_model]
+other = "Educational Model"
+
+[footer_families]
+other = "Families"
+
+[footer_join]
+other = "Join interest list"
+
+[footer_contact]
+other = "Contact us"
+
+[footer_connect]
+other = "Connect"
+
+[footer_email]
+other = "Email us"
+
+[footer_rights]
+other = "All rights reserved."
+
+[footer_nondiscrim]
+other = "Bridge Public Schools does not discriminate on the basis of disability, gender, gender identity or expression, nationality, legal or economic status, primary language or English-Learner status, race or ethnicity, religion, or sexual orientation."
+
+# ── Homepage ──
+[home_hero_idx]
+other = "Proving the possible"
+[home_hero_h1]
+other = "Every child.<br><span class='b'>College bound.</span>"
+[home_hero_sub]
+other = "A tuition-free, open-enrollment public charter school coming to Yakima — built for high expectations and real results in our community."
+[home_hero_cta1]
+other = "Join our interest list"
+[home_hero_cta2]
+other = "See the model"
+[home_hero_meta1]
+other = "Opening Fall 2027"
+[home_hero_meta2]
+other = "Yakima, Washington"
+[home_hero_meta3]
+other = "Grades K &amp; 6 to start"
+
+[home_band1_l]
+other = "Students at launch — 100 in K, 100 in 6th"
+[home_band2_l]
+other = "Full college-prep pathway over time"
+[home_band3_l]
+other = "Tuition · open to every family"
+[home_band4_l]
+other = "Opening this fall in Yakima, WA"
+
+[home_model_h2]
+other = "The educational model"
+[home_model_lead]
+other = "A clear, deliberate approach to teaching and learning — designed so every student is known, challenged, and prepared for college and life."
+[home_model1_h]
+other = "Rigorous instruction"
+[home_model1_p]
+other = "Explicit teaching, guided practice, frequent checks for understanding, and timely intervention — all standards-aligned."
+[home_model2_h]
+other = "Early literacy &amp; numeracy"
+[home_model2_p]
+other = "Students are assessed in reading and math within the first weeks so staff can meet every need immediately."
+[home_model3_h]
+other = "Language development"
+[home_model3_p]
+other = "Integrated into every subject — affirming students' home languages while building the academic English they need to thrive."
+[home_model4_h]
+other = "Structured, joyful culture"
+[home_model4_p]
+other = "Warm, orderly classrooms with clear routines — students greeted by name, safe, known, and challenged."
+
+[home_values_h2]
+other = "Our core values"
+[home_values_lead]
+other = "Four commitments that shape how we work with families, students, and communities every day."
+[home_val1_t]
+other = "Clarity"
+[home_val1_p]
+other = "We communicate transparently with families and communities."
+[home_val2_t]
+other = "Compassion"
+[home_val2_p]
+other = "Nurturing, culturally-responsive spaces where all belong."
+[home_val3_t]
+other = "Confidence"
+[home_val3_p]
+other = "Student agency built through rigor and measurable outcomes."
+[home_val4_t]
+other = "Character"
+[home_val4_p]
+other = "Ethical leaders who contribute to their communities."
+
+[home_vision_q]
+other = "Every child, regardless of zip code, will have equitable access to <span class='hl'>excellent public education</span> that develops powerful thinkers, compassionate citizens, and confident leaders."
+[home_vision_by]
+other = "— The Bridge Public Schools vision"
+
+[home_founder_kick]
+other = "Founder &amp; CEO"
+[home_founder_role]
+other = "Three decades of public-education leadership"
+[home_founder_bio]
+other = "From bilingual elementary teacher to turnaround principal to multi-state system leader, Mr. Posada brings a demonstrated record of launching and scaling high-performing schools for students from underserved backgrounds."
+[home_founder_stat1_l]
+other = "schools launched in nine years"
+[home_founder_stat2_l]
+other = "of seniors matriculated to college, annually, across his region"
+[home_founder_btn]
+other = "Read the full bio"
+[home_founder_portrait]
+other = "Portrait — add photo"
+
+[home_faq_kick]
+other = "For families"
+[home_faq_h2]
+other = "Got questions?"
+[home_faq_p]
+other = "Everything families ask most — and an open door for the rest."
+[home_faq_btn]
+other = "Ask us anything"
+[home_faq_q1]
+other = "Is Bridge tuition-free?"
+[home_faq_a1]
+other = "Yes — Bridge is a tuition-free, open-enrollment public charter school. There is no cost to attend, and any family in our community can apply."
+[home_faq_q2]
+other = "When and where will Bridge open?"
+[home_faq_a2]
+other = "Bridge opens in Fall 2027 in Yakima, Washington, beginning with kindergarten and sixth grade."
+[home_faq_q3]
+other = "Which grades will you serve?"
+[home_faq_a3]
+other = "We launch with kindergarten and sixth grade — 200 students total — and add two grades each year until we serve all of K–12."
+[home_faq_q4]
+other = "How can my family stay informed?"
+[home_faq_a4]
+other = "The best first step is joining our interest list. We'll share enrollment details, info sessions, and key dates directly with you as we approach our Fall 2027 opening."
+[home_faq_q5]
+other = "How can I support Bridge?"
+[home_faq_a5]
+other = "We're building Bridge alongside our community. Founding families, community partners, and local supporters are all welcome — reach out and we'll find the right way for you to get involved."
+
+[home_inv_kick]
+other = "Get involved"
+[home_inv_h2]
+other = "Help us prove the possible."
+[home_inv_p]
+other = "Bridge is being built with our community, for our community. Whether you're a family or a future partner, there's a place for you here."
+[home_inv_fam_ck]
+other = "Families"
+[home_inv_fam_h]
+other = "Join the interest list"
+[home_inv_fam_name]
+other = "Full name"
+[home_inv_fam_name_ph]
+other = "Your name"
+[home_inv_fam_email]
+other = "Email address"
+[home_inv_fam_email_ph]
+other = "you@email.com"
+[home_inv_fam_btn]
+other = "Join the interest list"
+[home_inv_fam_ok]
+other = "✓ You're on the list — thank you!"
+[home_inv_com_ck]
+other = "Community"
+[home_inv_com_h]
+other = "Support the school"
+[home_inv_com_p]
+other = "We're seeking partners and supporters who believe every child deserves an excellent public school. There are many ways to help:"
+[home_inv_com_w1]
+other = "Community &amp; nonprofit partnerships"
+[home_inv_com_w2]
+other = "Spread the word to Yakima families"
+[home_inv_com_w3]
+other = "Volunteer, host, or sponsor"
+[home_inv_com_btn]
+other = "Partner with us"
+
+# ── About page ──
+[about_crumb]
+other = "About"
+[about_h1]
+other = "About Bridge"
+[about_sub]
+other = "A nonprofit public charter school network committed to proving the possible — high expectations, tuition-free, for every student in our community."
+[about_mv_h2]
+other = "Mission &amp; vision"
+[about_mv_lead]
+other = "Why Bridge exists, and the future we are building toward — together with families and community."
+[about_mission_lbl]
+other = "Our mission"
+[about_mission_p]
+other = "Bridge Public Schools provides high-expectations, tuition-free, open-enrollment public schools in historically underserved communities that prepare every student for success in college and life."
+[about_vision_lbl]
+other = "Our vision"
+[about_vision_p]
+other = "Every child, regardless of zip code, will have equitable access to excellent public education that develops powerful thinkers, compassionate citizens, and confident leaders who succeed in college and beyond."
+[about_values_h2]
+other = "Our core values"
+[about_values_lead]
+other = "Four commitments — the four C's — that shape how we work with families, students, and communities every day."
+[about_val1_p]
+other = "We communicate transparently with families, students, and communities."
+[about_val2_p]
+other = "We create nurturing, culturally-responsive environments where all students belong."
+[about_val3_p]
+other = "We build student agency through rigorous academics and measurable outcomes."
+[about_val4_p]
+other = "We develop ethical leaders who contribute positively to their communities."
+[about_lead_h2]
+other = "Leadership"
+[about_lead_lead]
+other = "Bridge is led by an experienced K–12 system leader with a record of launching and scaling high-performing schools."
+[about_founder_kick]
+other = "Founder &amp; CEO"
+[about_founder_role]
+other = "Nearly three decades of public-education leadership"
+[about_founder_p1]
+other = "Bridge Public Schools is led by Founder and Chief Executive Officer Rolando Posada, an experienced K–12 system leader with a demonstrated record of launching, leading, and scaling high-performing schools serving predominantly low-income students. Mr. Posada brings nearly three decades of experience across the full continuum of public education leadership, including classroom instruction, school turnaround, regional management, and multi-state system oversight."
+[about_founder_p2]
+other = "He began his career as a bilingual elementary teacher and quickly demonstrated the ability to drive strong academic outcomes for English learners and students from underserved backgrounds. His leadership trajectory includes successful campus turnarounds as a principal and promotion to executive and regional roles, where he helped launch 30 schools in nine years, built leadership pipelines, and oversaw academic systems that resulted in 100% of seniors matriculating to college annually across his region."
+[about_founder_p3]
+other = "His personal background as the son of immigrant parents and a first-generation college graduate informs Bridge Public Schools' unwavering commitment to equity, excellence, and results — and the belief that we can prove the possible for Washington's students."
+[about_founder_tag]
+other = "Every child. College bound."
+[about_founder_btn]
+other = "Meet our Board of Directors"
+[about_cta_kick]
+other = "Be part of it"
+[about_cta_h2]
+other = "Join our interest list"
+[about_cta_p]
+other = "Stay close as Bridge takes shape in Yakima. We'll share enrollment dates, info sessions, and news for your family."
+
+# ── Shared interior bits ──
+[crumb_home]
+other = "Home"
+[form_name]
+other = "Full name"
+[form_name_ph]
+other = "Your name"
+[form_email]
+other = "Email address"
+[form_email_ph]
+other = "you@email.com"
+[form_join_btn]
+other = "Join the interest list"
+
+# ── Educational Model page ──
+[model_crumb]
+other = "Educational Model"
+[model_h1]
+other = "Educational model"
+[model_sub]
+other = "A clear, deliberate approach to teaching and learning — designed to prepare every student for success in college and life."
+[model_teach_h2]
+other = "How we teach"
+[model_teach_lead]
+other = "Rigorous, standards-aligned instruction built on strong relationships and consistent systems — so students feel safe, known, challenged, and supported."
+[model_p1_h]
+other = "Rigorous instruction"
+[model_p1_p]
+other = "Explicit teaching, guided practice, independent application, frequent checks for understanding, student work analysis, and timely intervention."
+[model_p2_h]
+other = "Early literacy &amp; numeracy"
+[model_p2_p]
+other = "Within the first weeks, students are assessed in reading and math so staff can identify needs and provide support immediately."
+[model_p3_h]
+other = "Data-driven support"
+[model_p3_p]
+other = "Continuous use of data to improve instruction — staff analyze student work and adjust so every learner keeps moving forward."
+[model_p4_h]
+other = "Structured, joyful culture"
+[model_p4_p]
+other = "Warm, orderly classrooms with clear routines — students greeted by name, discussing rigorous texts and problems together."
+[model_plan_h2]
+other = "Our launch plan"
+[model_plan_lead]
+other = "Bridge opens with 200 students and adds two grades each year — building strong early-elementary foundations and a clear middle-school pathway toward college readiness, all the way to full K–12."
+[model_y1_yr]
+other = "Year 1 · Fall 2027"
+[model_y1_p]
+other = "200 students — 100 in kindergarten, 100 in sixth grade."
+[model_y2_yr]
+other = "Year 2"
+[model_y2_p]
+other = "Two grades added, extending both the elementary and middle-school pathways."
+[model_y3_yr]
+other = "Each year after"
+[model_y3_p]
+other = "Bridge continues adding two grades annually as the founding classes grow."
+[model_y4_yr]
+other = "At full build"
+[model_y4_p]
+other = "A complete K–12 college-prep school serving the Yakima community."
+[model_lang_kick]
+other = "Multilingual by design"
+[model_lang_h2]
+other = "Supporting language development"
+[model_lang_p1]
+other = "Bridge is intentionally designed to serve multilingual learners. Teachers integrate language development into academic instruction through vocabulary development, structured academic discussion, sentence frames, content-based language supports, and frequent opportunities to speak, read, and write across disciplines."
+[model_lang_p2]
+other = "The school affirms students' home languages and cultures while ensuring students develop the academic English necessary for long-term success."
+[model_cul_kick]
+other = "Walk onto campus"
+[model_cul_h2]
+other = "A warm, orderly, joyful school"
+[model_cul_p1]
+other = "A visitor should see students greeted by name, classrooms with clear routines, teachers checking for understanding, students discussing rigorous texts and problems, and staff using data to provide timely support."
+[model_cul_p2]
+other = "The model combines high expectations with strong relationships and consistent systems — so students feel safe, known, challenged, and supported."
+[model_cta_kick]
+other = "Questions about the model?"
+[model_cta_h2]
+other = "Let's talk"
+[model_cta_p]
+other = "We'd love to tell you more about how Bridge teaches — and how your family can be part of our founding classes."
+
+# ── Board page ──
+[board_crumb]
+other = "Board of Directors"
+[board_h1]
+other = "Board of Directors"
+[board_sub]
+other = "Our Board provides governance and strategic oversight to ensure Bridge fulfills its mission of proving the possible for every student."
+[board_h2]
+other = "Meet the board"
+[board_lead]
+other = "The people guiding Bridge's governance, accountability, and long-term sustainability."
+[board_member_role]
+other = "Board Member"
+[board_bio_soon]
+other = "Bio coming soon."
+[board_more_h]
+other = "More members soon"
+[board_more_role]
+other = "Founding board"
+[board_more_p]
+other = "We're assembling a founding board of community leaders. Interested in serving? We'd love to hear from you."
+[board_more_link]
+other = "Get in touch →"
+[board_gov_h2]
+other = "Public meetings &amp; governance"
+[board_gov_p]
+other = "As a public charter school, Bridge operates with transparency and accountability. Interested in learning more about our board or attending a public meeting?"
+[board_gov_btn]
+other = "Contact us for meeting information"
+[board_cta_kick]
+other = "Support the mission"
+[board_cta_h2]
+other = "Help us prove the possible"
+[board_cta_p]
+other = "Founding families, community partners, and supporters are all part of building Bridge. Join us."
+
+# ── Contact page ──
+[contact_crumb]
+other = "Contact"
+[contact_h1]
+other = "Get in touch"
+[contact_sub]
+other = "Questions about enrollment, our programs, or supporting our mission? Send us a note and a member of the Bridge team will get back to you."
+[contact_cta_btn]
+other = "Get in touch"
+[contact_f_name]
+other = "Name / Nombre"
+[contact_f_email]
+other = "Email / Correo"
+[contact_f_phone]
+other = "Phone"
+[contact_f_phone_opt]
+other = "(optional)"
+[contact_f_subject]
+other = "I'm reaching out about / Me comunico sobre"
+[contact_f_opt1]
+other = "Enrollment / Inscripción"
+[contact_f_opt2]
+other = "Community partnership / Colaboración comunitaria"
+[contact_f_opt3]
+other = "Supporting the school / Apoyar a la escuela"
+[contact_f_opt4]
+other = "Careers / Empleo"
+[contact_f_opt5]
+other = "General question / Pregunta general"
+[contact_f_message]
+other = "Message / Mensaje"
+[contact_f_message_ph]
+other = "How can we help?"
+[contact_f_send]
+other = "Send message"
+[contact_info_kick]
+other = "Reach us"
+[contact_info_loc_h]
+other = "Location"
+[contact_info_loc_p]
+other = "Yakima, Washington"
+[contact_info_best_h]
+other = "Best way to reach us"
+[contact_info_best_p]
+other = "Use the form — a member of our team will reply."
+[contact_info_open_h]
+other = "Opening"
+[contact_info_open_p]
+other = "Fall 2027 · Founding grades K &amp; 6"
+[contact_info_follow_h]
+other = "Follow along"
+[contact_help_h2]
+other = "How we can help"
+[contact_help_lead]
+other = "However you're connected to Bridge, there's a place for you in our community."
+[contact_help1_h]
+other = "Prospective families"
+[contact_help1_p]
+other = "Learn about our school, the educational model, and how to join the interest list for our founding classes."
+[contact_help2_h]
+other = "Community partners"
+[contact_help2_p]
+other = "Explore ways to support our students — partnerships, sponsorships, volunteering, and spreading the word in Yakima."
+[contact_help3_h]
+other = "Educators"
+[contact_help3_p]
+other = "Interested in building a school from the ground up? Reach out about future career opportunities with Bridge."
+
+# ── News page ──
+[news_crumb]
+other = "News"
+[news_h1]
+other = "News &amp; updates"
+[news_sub]
+other = "The latest from Bridge Public Schools — announcements, milestones, and ways to get involved as we prepare to open in Yakima."
+[news_read]
+other = "Read"
+[news_sub_h3]
+other = "Stay in the loop"
+[news_sub_p]
+other = "Get announcements and key dates by email as we approach our Fall 2027 opening."
+[news_sub_email_ph]
+other = "Your email address"
+[news_sub_btn]
+other = "Subscribe"
+[news_cats_h3]
+other = "Categories"
+[news_cta_kick]
+other = "Don't miss a thing"
+[news_cta_h2]
+other = "Join our interest list"
+[news_cta_p]
+other = "Be first to hear about enrollment dates, info sessions, and milestones as Bridge takes shape in Yakima."
+
+# ── Thank-you page ──
+[thanks_crumb]
+other = "Thank you"
+[thanks_h1]
+other = "Thank you!"
+[thanks_sub]
+other = "Your message is on its way — we'll be in touch soon."
+[thanks_body]
+other = "Thanks for reaching out to Bridge Public Schools. A member of our team will get back to you. As we approach our Fall 2027 opening in Yakima, we'll share enrollment details, info sessions, and key dates."
+[thanks_btn_home]
+other = "Back to home"
+[thanks_btn_news]
+other = "Read our news"

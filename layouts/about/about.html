@@ -1,0 +1,101 @@
+{{ define "head" }}
+<style>
+  .statements{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .stmt{border:1px solid var(--line);border-left:4px solid var(--green);border-radius:10px;padding:30px 32px;background:#fff;}
+  .stmt.v{border-left-color:var(--blue);}
+  .stmt .lbl{font-family:"Saira Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--green-deep);margin-bottom:12px;}
+  .stmt.v .lbl{color:var(--blue);}
+  .stmt p{font-family:"Saira Condensed";font-weight:500;font-size:23px;line-height:1.25;color:var(--navy);}
+  .vstrip{background:var(--mist);}
+  .vstrip .wrap{padding:80px 36px;}
+  .founder{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:start;}
+  .founder h2{font-family:"Saira Condensed";font-weight:800;text-transform:uppercase;font-size:clamp(34px,4.4vw,52px);color:var(--navy);line-height:.92;margin:0;}
+  .founder .role{font-family:"Saira Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--green-deep);font-size:15px;margin:8px 0 18px;}
+  .founder-portrait{position:sticky;top:96px;}
+  @media(max-width:920px){.statements{grid-template-columns:1fr;}.founder{grid-template-columns:1fr;}.founder-portrait{position:static;}}
+</style>
+{{ end }}
+
+{{ define "main" }}
+<main>
+  <section class="phero">
+    <div class="wrap">
+      <div class="crumbs"><a href="{{ "" | relLangURL }}">{{ T "crumb_home" }}</a> <span>/</span> <span>{{ T "about_crumb" }}</span></div>
+      <h1>{{ T "about_h1" }}</h1>
+      <p class="sub">{{ T "about_sub" }}</p>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section class="block">
+    <div class="wrap">
+      <div class="head">
+        <div class="num">01</div>
+        <h2>{{ T "about_mv_h2" | safeHTML }}</h2>
+        <p class="lead">{{ T "about_mv_lead" }}</p>
+      </div>
+      <div class="statements">
+        <div class="stmt">
+          <div class="lbl">{{ T "about_mission_lbl" }}</div>
+          <p>{{ T "about_mission_p" }}</p>
+        </div>
+        <div class="stmt v">
+          <div class="lbl">{{ T "about_vision_lbl" }}</div>
+          <p>{{ T "about_vision_p" }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="vstrip">
+    <div class="wrap">
+      <div class="head" style="margin-bottom:36px">
+        <div class="num">02</div>
+        <h2>{{ T "about_values_h2" }}</h2>
+        <p class="lead">{{ T "about_values_lead" }}</p>
+      </div>
+      <div class="vrow">
+        <div class="vcell"><div class="t"><i style="background:var(--navy)"></i>Clarity</div><p>{{ T "about_val1_p" }}</p></div>
+        <div class="vcell"><div class="t"><i style="background:var(--green)"></i>Compassion</div><p>{{ T "about_val2_p" }}</p></div>
+        <div class="vcell"><div class="t"><i style="background:var(--blue)"></i>Confidence</div><p>{{ T "about_val3_p" }}</p></div>
+        <div class="vcell"><div class="t"><i style="background:var(--navy-deep)"></i>Character</div><p>{{ T "about_val4_p" }}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section class="block" id="leadership">
+    <div class="wrap">
+      <div class="head">
+        <div class="num">03</div>
+        <h2>{{ T "about_lead_h2" }}</h2>
+        <p class="lead">{{ T "about_lead_lead" }}</p>
+      </div>
+      <div class="founder">
+        <div class="founder-portrait">
+          <div class="portrait"><div class="pc"><div class="initials">RP</div><small>{{ T "home_founder_portrait" }}</small></div></div>
+          <div class="fstats">
+            <div><div class="n">30</div><div class="l">{{ T "home_founder_stat1_l" }}</div></div>
+            <div><div class="n">100%</div><div class="l">{{ T "home_founder_stat2_l" }}</div></div>
+          </div>
+        </div>
+        <div>
+          <div class="kick">{{ T "about_founder_kick" | safeHTML }}</div>
+          <h2>Rolando Posada</h2>
+          <div class="role">{{ T "about_founder_role" }}</div>
+          <div class="prose" style="margin-top:8px">
+            <p>{{ T "about_founder_p1" }}</p>
+            <p>{{ T "about_founder_p2" }}</p>
+            <p>{{ T "about_founder_p3" }}</p>
+          </div>
+          <p style="font-family:'Saira Condensed';font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--green-deep);font-size:18px;margin-top:22px">{{ T "about_founder_tag" }}</p>
+          <a href="{{ "about/board/" | relLangURL }}" class="btn btn-outn" style="margin-top:20px">{{ T "about_founder_btn" }} <span class="ar">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "cta-band.html" (dict "kick" "about_cta_kick" "h2" "about_cta_h2" "p" "about_cta_p") }}
+</main>
+{{ end }}

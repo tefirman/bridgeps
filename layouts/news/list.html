@@ -1,0 +1,84 @@
+{{ define "head" }}
+<style>
+  .newsgrid{display:grid;grid-template-columns:1.5fr .75fr;gap:46px;align-items:start;}
+  .article{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;margin-bottom:24px;}
+  .article .banner{height:180px;background:var(--navy);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+  .article .banner::before{content:"";position:absolute;inset:0;background:radial-gradient(500px 240px at 80% 10%,rgba(79,168,220,.3),transparent 60%);}
+  .article .banner img{height:120px;position:relative;opacity:.9;}
+  .article .body{padding:32px 34px 36px;}
+  .article .meta{display:flex;align-items:center;gap:14px;margin-bottom:14px;flex-wrap:wrap;}
+  .article .cat{display:inline-block;font-family:"Saira Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:11px;color:var(--green-deep);background:rgba(52,160,90,.1);padding:3px 9px;border-radius:3px;}
+  .article .date{font-family:"Saira Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:13.5px;color:var(--blue);}
+  .article h2{font-family:"Saira Condensed";font-weight:800;text-transform:uppercase;font-size:32px;color:var(--navy);line-height:1;margin:0 0 14px;}
+  .aside{display:flex;flex-direction:column;gap:22px;position:sticky;top:96px;}
+  .sub-card{border:1px solid var(--line);border-radius:12px;padding:26px;background:var(--mist);}
+  .sub-card h3{font-family:"Saira Condensed";font-weight:800;text-transform:uppercase;font-size:22px;color:var(--navy);margin:0 0 8px;}
+  .sub-card p{font-size:14.5px;color:rgba(21,42,60,.78);margin-bottom:16px;}
+  .sub-card input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:6px;font:inherit;font-size:15px;margin-bottom:12px;}
+  .sub-card .btn{width:100%;justify-content:center;}
+  .cats{border:1px solid var(--line);border-radius:12px;padding:26px;}
+  .cats h3{font-family:"Saira Condensed";font-weight:800;text-transform:uppercase;font-size:18px;color:var(--navy);margin:0 0 14px;}
+  .cats a{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px;color:#33424f;}
+  .cats a:last-child{border-bottom:0;}
+  .cats a:hover{color:var(--blue);}
+  .cats .ct{background:var(--mist);border-radius:20px;padding:1px 9px;font-size:12.5px;color:var(--navy);font-weight:700;}
+  @media(max-width:920px){.newsgrid{grid-template-columns:1fr;}.aside{position:static;}}
+</style>
+{{ end }}
+
+{{ define "main" }}
+<main>
+  <section class="phero">
+    <div class="wrap">
+      <div class="crumbs"><a href="{{ "" | relLangURL }}">{{ T "crumb_home" }}</a> <span>/</span> <span>{{ T "news_crumb" }}</span></div>
+      <h1>{{ T "news_h1" | safeHTML }}</h1>
+      <p class="sub">{{ T "news_sub" }}</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="newsgrid">
+        <div>
+          {{ range .Pages.ByDate.Reverse }}
+          <article class="article">
+            <div class="banner"><img src="{{ "assets/logo-transparent.png" | relURL }}" alt=""></div>
+            <div class="body">
+              <div class="meta">
+                {{ with .Params.categories }}<span class="cat">{{ index . 0 }}</span>{{ end }}
+                <span class="date">{{ time.Format ":date_long" .Date }}</span>
+              </div>
+              <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+              <div class="prose">{{ .Content }}</div>
+            </div>
+          </article>
+          {{ end }}
+        </div>
+
+        <aside class="aside">
+          <div class="sub-card">
+            <h3>{{ T "news_sub_h3" }}</h3>
+            <p>{{ T "news_sub_p" }}</p>
+            <form action="https://formspree.io/f/mykawzlg" method="POST">
+              <input type="email" name="email" placeholder="{{ T "news_sub_email_ph" }}" required>
+              <input type="hidden" name="_subject" value="Newsletter subscribe (news page)">
+              <input type="hidden" name="_next" value="{{ "thanks/" | absLangURL }}">
+              <button type="submit" class="btn btn-primary">{{ T "news_sub_btn" }}</button>
+            </form>
+          </div>
+          {{ with .Site.Taxonomies.categories }}
+          <div class="cats">
+            <h3>{{ T "news_cats_h3" }}</h3>
+            {{ range $name, $taxonomy := . }}
+            <a href="{{ ($.Site.GetPage (printf "/categories/%s" $name)).RelPermalink }}"><span>{{ $name | title }}</span> <span class="ct">{{ len $taxonomy }}</span></a>
+            {{ end }}
+          </div>
+          {{ end }}
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "cta-band.html" (dict "kick" "news_cta_kick" "h2" "news_cta_h2" "p" "news_cta_p") }}
+</main>
+{{ end }}

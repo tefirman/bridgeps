@@ -23,3 +23,506 @@ other = "Últimas Noticias"
 
 [home_view_all_news]
 other = "Ver todas las noticias"
+
+# ── Shared shell (util bar, nav, footer) ──
+[site_description]
+other = "Una escuela pública chárter gratuita que abre en otoño de 2027 en Yakima, Washington. Demostrando lo posible — cada niño, rumbo a la universidad."
+
+[util_pill]
+other = "En formación"
+
+[util_msg]
+other = "Apertura en otoño de 2027 en Yakima, Washington · Grados fundadores K y 6"
+
+[nav_about]
+other = "Nosotros"
+
+[nav_model]
+other = "Modelo"
+
+[nav_board]
+other = "Junta"
+
+[nav_news]
+other = "Noticias"
+
+[nav_contact]
+other = "Contacto"
+
+[nav_cta]
+other = "Únase"
+
+[footer_blurb]
+other = "Una escuela pública chárter sin fines de lucro que abre en otoño de 2027 en Yakima, Washington — demostrando lo posible para cada estudiante."
+
+[footer_explore]
+other = "Explorar"
+
+[footer_mission]
+other = "Misión y valores"
+
+[footer_board]
+other = "Junta directiva"
+
+[footer_model]
+other = "Modelo educativo"
+
+[footer_families]
+other = "Familias"
+
+[footer_join]
+other = "Lista de interés"
+
+[footer_contact]
+other = "Contáctenos"
+
+[footer_connect]
+other = "Conectar"
+
+[footer_email]
+other = "Escríbanos"
+
+[footer_rights]
+other = "Todos los derechos reservados."
+
+[footer_nondiscrim]
+other = "Bridge Public Schools no discrimina por motivos de discapacidad, género, identidad o expresión de género, nacionalidad, situación legal o económica, idioma principal o condición de aprendiz de inglés, raza o etnia, religión u orientación sexual."
+
+# ── Homepage ──
+[home_hero_idx]
+other = "Demostrando lo posible"
+[home_hero_h1]
+other = "Cada niño.<br><span class='b'>Rumbo a la universidad.</span>"
+[home_hero_sub]
+other = "Una escuela pública chárter gratuita y de inscripción abierta que llega a Yakima — creada para altas expectativas y resultados reales en nuestra comunidad."
+[home_hero_cta1]
+other = "Únase a la lista de interés"
+[home_hero_cta2]
+other = "Ver el modelo"
+[home_hero_meta1]
+other = "Apertura otoño 2027"
+[home_hero_meta2]
+other = "Yakima, Washington"
+[home_hero_meta3]
+other = "Grados K y 6 al inicio"
+
+[home_band1_l]
+other = "Estudiantes al inicio — 100 en K, 100 en 6.º"
+[home_band2_l]
+other = "Trayecto completo hacia la universidad"
+[home_band3_l]
+other = "Matrícula · abierta a toda familia"
+[home_band4_l]
+other = "Apertura este otoño en Yakima, WA"
+
+[home_model_h2]
+other = "El modelo educativo"
+[home_model_lead]
+other = "Un enfoque claro y deliberado de enseñanza y aprendizaje — diseñado para que cada estudiante sea conocido, desafiado y preparado para la universidad y la vida."
+[home_model1_h]
+other = "Instrucción rigurosa"
+[home_model1_p]
+other = "Enseñanza explícita, práctica guiada, verificación frecuente de la comprensión e intervención oportuna — alineadas con los estándares."
+[home_model2_h]
+other = "Lectoescritura y cálculo tempranos"
+[home_model2_p]
+other = "Se evalúa a los estudiantes en lectura y matemáticas en las primeras semanas para atender cada necesidad de inmediato."
+[home_model3_h]
+other = "Desarrollo del lenguaje"
+[home_model3_p]
+other = "Integrado en cada materia — afirmando el idioma del hogar mientras se desarrolla el inglés académico necesario para prosperar."
+[home_model4_h]
+other = "Cultura estructurada y alegre"
+[home_model4_p]
+other = "Aulas cálidas y ordenadas con rutinas claras — estudiantes recibidos por su nombre, seguros, conocidos y desafiados."
+
+[home_values_h2]
+other = "Nuestros valores"
+[home_values_lead]
+other = "Cuatro compromisos que guían cómo trabajamos con las familias, los estudiantes y la comunidad cada día."
+[home_val1_t]
+other = "Clarity"
+[home_val1_p]
+other = "Comunicamos con transparencia a las familias y la comunidad."
+[home_val2_t]
+other = "Compassion"
+[home_val2_p]
+other = "Espacios afectuosos y culturalmente receptivos donde todos pertenecen."
+[home_val3_t]
+other = "Confidence"
+[home_val3_p]
+other = "Autonomía estudiantil forjada con rigor y resultados medibles."
+[home_val4_t]
+other = "Character"
+[home_val4_p]
+other = "Líderes éticos que aportan a sus comunidades."
+
+[home_vision_q]
+other = "Cada niño, sin importar su código postal, tendrá acceso equitativo a una <span class='hl'>educación pública excelente</span> que forma pensadores poderosos, ciudadanos compasivos y líderes seguros."
+[home_vision_by]
+other = "— La visión de Bridge Public Schools"
+
+[home_founder_kick]
+other = "Fundador y director ejecutivo"
+[home_founder_role]
+other = "Tres décadas de liderazgo en educación pública"
+[home_founder_bio]
+other = "De maestro bilingüe de primaria a director de transformación y líder de sistemas en varios estados, el Sr. Posada aporta un historial comprobado de fundar y expandir escuelas de alto rendimiento para estudiantes de comunidades desatendidas."
+[home_founder_stat1_l]
+other = "escuelas fundadas en nueve años"
+[home_founder_stat2_l]
+other = "de los graduados matriculados en la universidad, cada año, en su región"
+[home_founder_btn]
+other = "Leer la biografía completa"
+[home_founder_portrait]
+other = "Retrato — agregar foto"
+
+[home_faq_kick]
+other = "Para las familias"
+[home_faq_h2]
+other = "¿Tiene preguntas?"
+[home_faq_p]
+other = "Lo que más preguntan las familias — y una puerta abierta para lo demás."
+[home_faq_btn]
+other = "Pregúntenos lo que sea"
+[home_faq_q1]
+other = "¿Bridge es gratuita?"
+[home_faq_a1]
+other = "Sí — Bridge es una escuela pública chárter gratuita y de inscripción abierta. No tiene costo y cualquier familia de nuestra comunidad puede solicitar."
+[home_faq_q2]
+other = "¿Cuándo y dónde abrirá Bridge?"
+[home_faq_a2]
+other = "Bridge abre en otoño de 2027 en Yakima, Washington, comenzando con kínder y sexto grado."
+[home_faq_q3]
+other = "¿Qué grados atenderán?"
+[home_faq_a3]
+other = "Comenzamos con kínder y sexto grado — 200 estudiantes en total — y agregamos dos grados cada año hasta llegar a todo K–12."
+[home_faq_q4]
+other = "¿Cómo puede informarse mi familia?"
+[home_faq_a4]
+other = "El mejor primer paso es unirse a nuestra lista de interés. Compartiremos detalles de inscripción, sesiones informativas y fechas clave directamente con usted al acercarnos a la apertura en otoño de 2027."
+[home_faq_q5]
+other = "¿Cómo puedo apoyar a Bridge?"
+[home_faq_a5]
+other = "Estamos construyendo Bridge junto a nuestra comunidad. Damos la bienvenida a familias fundadoras, socios comunitarios y colaboradores locales — contáctenos y encontraremos la mejor manera de participar."
+
+[home_inv_kick]
+other = "Participe"
+[home_inv_h2]
+other = "Ayúdenos a demostrar lo posible."
+[home_inv_p]
+other = "Bridge se construye con nuestra comunidad y para nuestra comunidad. Sea usted una familia o un futuro colaborador, aquí hay un lugar para usted."
+[home_inv_fam_ck]
+other = "Familias"
+[home_inv_fam_h]
+other = "Únase a la lista de interés"
+[home_inv_fam_name]
+other = "Nombre completo"
+[home_inv_fam_name_ph]
+other = "Su nombre"
+[home_inv_fam_email]
+other = "Correo electrónico"
+[home_inv_fam_email_ph]
+other = "usted@correo.com"
+[home_inv_fam_btn]
+other = "Únase a la lista"
+[home_inv_fam_ok]
+other = "✓ Está en la lista — ¡gracias!"
+[home_inv_com_ck]
+other = "Comunidad"
+[home_inv_com_h]
+other = "Apoye la escuela"
+[home_inv_com_p]
+other = "Buscamos socios y colaboradores que crean que cada niño merece una escuela pública excelente. Hay muchas formas de ayudar:"
+[home_inv_com_w1]
+other = "Alianzas comunitarias y sin fines de lucro"
+[home_inv_com_w2]
+other = "Corra la voz entre las familias de Yakima"
+[home_inv_com_w3]
+other = "Voluntariado, acoger o patrocinar"
+[home_inv_com_btn]
+other = "Colabore con nosotros"
+
+# ── About page ──
+[about_crumb]
+other = "Nosotros"
+[about_h1]
+other = "Acerca de Bridge"
+[about_sub]
+other = "Una red de escuelas públicas chárter sin fines de lucro comprometida con demostrar lo posible — altas expectativas, gratuita, para cada estudiante de nuestra comunidad."
+[about_mv_h2]
+other = "Misión y visión"
+[about_mv_lead]
+other = "Por qué existe Bridge y el futuro que construimos — junto a las familias y la comunidad."
+[about_mission_lbl]
+other = "Nuestra misión"
+[about_mission_p]
+other = "Bridge Public Schools ofrece escuelas públicas gratuitas, de inscripción abierta y altas expectativas en comunidades históricamente desatendidas que preparan a cada estudiante para el éxito en la universidad y en la vida."
+[about_vision_lbl]
+other = "Nuestra visión"
+[about_vision_p]
+other = "Cada niño, sin importar su código postal, tendrá acceso equitativo a una educación pública excelente que forma pensadores poderosos, ciudadanos compasivos y líderes seguros que triunfan en la universidad y más allá."
+[about_values_h2]
+other = "Nuestros valores"
+[about_values_lead]
+other = "Cuatro compromisos — las cuatro C — que guían cómo trabajamos con las familias, los estudiantes y la comunidad cada día."
+[about_val1_p]
+other = "Comunicamos con transparencia a las familias, los estudiantes y la comunidad."
+[about_val2_p]
+other = "Creamos entornos afectuosos y culturalmente receptivos donde todos los estudiantes pertenecen."
+[about_val3_p]
+other = "Forjamos la autonomía estudiantil con académicos rigurosos y resultados medibles."
+[about_val4_p]
+other = "Formamos líderes éticos que aportan positivamente a sus comunidades."
+[about_lead_h2]
+other = "Liderazgo"
+[about_lead_lead]
+other = "Bridge está dirigida por un líder experimentado de sistemas K–12 con un historial de fundar y expandir escuelas de alto rendimiento."
+[about_founder_kick]
+other = "Fundador y director ejecutivo"
+[about_founder_role]
+other = "Casi tres décadas de liderazgo en educación pública"
+[about_founder_p1]
+other = "Bridge Public Schools está dirigida por su fundador y director ejecutivo Rolando Posada, un líder experimentado de sistemas K–12 con un historial comprobado de fundar, dirigir y expandir escuelas de alto rendimiento que atienden predominantemente a estudiantes de bajos ingresos. El Sr. Posada aporta casi tres décadas de experiencia en todo el continuo del liderazgo en educación pública, incluyendo la instrucción en el aula, la transformación de escuelas, la gestión regional y la supervisión de sistemas en varios estados."
+[about_founder_p2]
+other = "Comenzó su carrera como maestro bilingüe de primaria y rápidamente demostró la capacidad de lograr sólidos resultados académicos para los aprendices de inglés y los estudiantes de comunidades desatendidas. Su trayectoria de liderazgo incluye transformaciones exitosas de planteles como director y ascensos a cargos ejecutivos y regionales, donde ayudó a fundar 30 escuelas en nueve años, formó canteras de líderes y supervisó sistemas académicos que lograron que el 100% de los graduados se matriculara en la universidad cada año en su región."
+[about_founder_p3]
+other = "Su historia personal como hijo de padres inmigrantes y primer graduado universitario de su familia nutre el compromiso inquebrantable de Bridge Public Schools con la equidad, la excelencia y los resultados — y la convicción de que podemos demostrar lo posible para los estudiantes de Washington."
+[about_founder_tag]
+other = "Cada niño. Rumbo a la universidad."
+[about_founder_btn]
+other = "Conozca nuestra Junta"
+[about_cta_kick]
+other = "Sea parte"
+[about_cta_h2]
+other = "Únase a nuestra lista de interés"
+[about_cta_p]
+other = "Manténgase cerca mientras Bridge toma forma en Yakima. Compartiremos fechas de inscripción, sesiones informativas y noticias para su familia."
+
+# ── Shared interior bits ──
+[crumb_home]
+other = "Inicio"
+[form_name]
+other = "Nombre completo"
+[form_name_ph]
+other = "Su nombre"
+[form_email]
+other = "Correo electrónico"
+[form_email_ph]
+other = "usted@correo.com"
+[form_join_btn]
+other = "Únase a la lista"
+
+# ── Educational Model page ──
+[model_crumb]
+other = "Modelo educativo"
+[model_h1]
+other = "Modelo educativo"
+[model_sub]
+other = "Un enfoque claro y deliberado de enseñanza y aprendizaje — diseñado para preparar a cada estudiante para el éxito en la universidad y en la vida."
+[model_teach_h2]
+other = "Cómo enseñamos"
+[model_teach_lead]
+other = "Instrucción rigurosa y alineada con los estándares, basada en relaciones sólidas y sistemas consistentes — para que los estudiantes se sientan seguros, conocidos, desafiados y apoyados."
+[model_p1_h]
+other = "Instrucción rigurosa"
+[model_p1_p]
+other = "Enseñanza explícita, práctica guiada, aplicación independiente, verificación frecuente de la comprensión, análisis del trabajo estudiantil e intervención oportuna."
+[model_p2_h]
+other = "Lectoescritura y cálculo tempranos"
+[model_p2_p]
+other = "En las primeras semanas, se evalúa a los estudiantes en lectura y matemáticas para identificar necesidades y brindar apoyo de inmediato."
+[model_p3_h]
+other = "Apoyo basado en datos"
+[model_p3_p]
+other = "Uso continuo de datos para mejorar la instrucción — el personal analiza el trabajo estudiantil y ajusta para que cada estudiante avance."
+[model_p4_h]
+other = "Cultura estructurada y alegre"
+[model_p4_p]
+other = "Aulas cálidas y ordenadas con rutinas claras — estudiantes recibidos por su nombre, discutiendo juntos textos y problemas rigurosos."
+[model_plan_h2]
+other = "Nuestro plan de apertura"
+[model_plan_lead]
+other = "Bridge abre con 200 estudiantes y agrega dos grados cada año — construyendo bases sólidas en la primaria temprana y un camino claro en la secundaria hacia la preparación universitaria, hasta llegar a todo K–12."
+[model_y1_yr]
+other = "Año 1 · Otoño 2027"
+[model_y1_p]
+other = "200 estudiantes — 100 en kínder, 100 en sexto grado."
+[model_y2_yr]
+other = "Año 2"
+[model_y2_p]
+other = "Se agregan dos grados, extendiendo los caminos de primaria y secundaria."
+[model_y3_yr]
+other = "Cada año después"
+[model_y3_p]
+other = "Bridge sigue agregando dos grados al año mientras crecen las clases fundadoras."
+[model_y4_yr]
+other = "Construcción completa"
+[model_y4_p]
+other = "Una escuela completa K–12 de preparación universitaria para la comunidad de Yakima."
+[model_lang_kick]
+other = "Multilingüe por diseño"
+[model_lang_h2]
+other = "Apoyo al desarrollo del lenguaje"
+[model_lang_p1]
+other = "Bridge está diseñada intencionalmente para servir a los aprendices multilingües. Los maestros integran el desarrollo del lenguaje en la instrucción académica mediante el desarrollo de vocabulario, la discusión académica estructurada, marcos de oraciones, apoyos lingüísticos basados en el contenido y oportunidades frecuentes para hablar, leer y escribir en todas las disciplinas."
+[model_lang_p2]
+other = "La escuela afirma el idioma y la cultura del hogar de los estudiantes mientras asegura que desarrollen el inglés académico necesario para el éxito a largo plazo."
+[model_cul_kick]
+other = "Al entrar al plantel"
+[model_cul_h2]
+other = "Una escuela cálida, ordenada y alegre"
+[model_cul_p1]
+other = "Un visitante debería ver a estudiantes recibidos por su nombre, aulas con rutinas claras, maestros verificando la comprensión, estudiantes discutiendo textos y problemas rigurosos, y personal usando datos para brindar apoyo oportuno."
+[model_cul_p2]
+other = "El modelo combina altas expectativas con relaciones sólidas y sistemas consistentes — para que los estudiantes se sientan seguros, conocidos, desafiados y apoyados."
+[model_cta_kick]
+other = "¿Preguntas sobre el modelo?"
+[model_cta_h2]
+other = "Hablemos"
+[model_cta_p]
+other = "Nos encantaría contarle más sobre cómo enseña Bridge — y cómo su familia puede formar parte de nuestras clases fundadoras."
+
+# ── Board page ──
+[board_crumb]
+other = "Junta directiva"
+[board_h1]
+other = "Junta directiva"
+[board_sub]
+other = "Nuestra Junta brinda gobernanza y supervisión estratégica para asegurar que Bridge cumpla su misión de demostrar lo posible para cada estudiante."
+[board_h2]
+other = "Conozca la junta"
+[board_lead]
+other = "Las personas que guían la gobernanza, la rendición de cuentas y la sostenibilidad a largo plazo de Bridge."
+[board_member_role]
+other = "Miembro de la junta"
+[board_bio_soon]
+other = "Biografía próximamente."
+[board_more_h]
+other = "Más miembros pronto"
+[board_more_role]
+other = "Junta fundadora"
+[board_more_p]
+other = "Estamos formando una junta fundadora de líderes comunitarios. ¿Le interesa servir? Nos encantaría saber de usted."
+[board_more_link]
+other = "Contáctenos →"
+[board_gov_h2]
+other = "Reuniones públicas y gobernanza"
+[board_gov_p]
+other = "Como escuela pública chárter, Bridge opera con transparencia y rendición de cuentas. ¿Le interesa conocer más sobre nuestra junta o asistir a una reunión pública?"
+[board_gov_btn]
+other = "Contáctenos para información de reuniones"
+[board_cta_kick]
+other = "Apoye la misión"
+[board_cta_h2]
+other = "Ayúdenos a demostrar lo posible"
+[board_cta_p]
+other = "Las familias fundadoras, los socios comunitarios y los colaboradores forman parte de la construcción de Bridge. Únase."
+
+# ── Contact page ──
+[contact_crumb]
+other = "Contacto"
+[contact_h1]
+other = "Contáctenos"
+[contact_sub]
+other = "¿Preguntas sobre la inscripción, nuestros programas o cómo apoyar nuestra misión? Envíenos un mensaje y un miembro del equipo de Bridge le responderá."
+[contact_cta_btn]
+other = "Contacto"
+[contact_f_name]
+other = "Nombre"
+[contact_f_email]
+other = "Correo electrónico"
+[contact_f_phone]
+other = "Teléfono"
+[contact_f_phone_opt]
+other = "(opcional)"
+[contact_f_subject]
+other = "Me comunico sobre"
+[contact_f_opt1]
+other = "Inscripción"
+[contact_f_opt2]
+other = "Colaboración comunitaria"
+[contact_f_opt3]
+other = "Apoyar a la escuela"
+[contact_f_opt4]
+other = "Empleo"
+[contact_f_opt5]
+other = "Pregunta general"
+[contact_f_message]
+other = "Mensaje"
+[contact_f_message_ph]
+other = "¿Cómo podemos ayudar?"
+[contact_f_send]
+other = "Enviar mensaje"
+[contact_info_kick]
+other = "Contáctenos"
+[contact_info_loc_h]
+other = "Ubicación"
+[contact_info_loc_p]
+other = "Yakima, Washington"
+[contact_info_best_h]
+other = "Mejor forma de contactarnos"
+[contact_info_best_p]
+other = "Use el formulario — un miembro de nuestro equipo le responderá."
+[contact_info_open_h]
+other = "Apertura"
+[contact_info_open_p]
+other = "Otoño de 2027 · Grados fundadores K y 6"
+[contact_info_follow_h]
+other = "Síganos"
+[contact_help_h2]
+other = "Cómo podemos ayudar"
+[contact_help_lead]
+other = "Sea cual sea su vínculo con Bridge, hay un lugar para usted en nuestra comunidad."
+[contact_help1_h]
+other = "Familias interesadas"
+[contact_help1_p]
+other = "Conozca nuestra escuela, el modelo educativo y cómo unirse a la lista de interés para nuestras clases fundadoras."
+[contact_help2_h]
+other = "Socios comunitarios"
+[contact_help2_p]
+other = "Explore formas de apoyar a nuestros estudiantes — alianzas, patrocinios, voluntariado y correr la voz en Yakima."
+[contact_help3_h]
+other = "Educadores"
+[contact_help3_p]
+other = "¿Le interesa construir una escuela desde cero? Comuníquese sobre futuras oportunidades de empleo con Bridge."
+
+# ── News page ──
+[news_crumb]
+other = "Noticias"
+[news_h1]
+other = "Noticias y novedades"
+[news_sub]
+other = "Lo más reciente de Bridge Public Schools — anuncios, logros y formas de participar mientras nos preparamos para abrir en Yakima."
+[news_read]
+other = "Leer"
+[news_sub_h3]
+other = "Manténgase al tanto"
+[news_sub_p]
+other = "Reciba anuncios y fechas clave por correo a medida que se acerca la apertura en otoño de 2027."
+[news_sub_email_ph]
+other = "Su correo electrónico"
+[news_sub_btn]
+other = "Suscríbase"
+[news_cats_h3]
+other = "Categorías"
+[news_cta_kick]
+other = "No se pierda nada"
+[news_cta_h2]
+other = "Únase a nuestra lista de interés"
+[news_cta_p]
+other = "Sea el primero en enterarse de las fechas de inscripción, sesiones informativas y logros a medida que Bridge toma forma en Yakima."
+
+# ── Thank-you page ──
+[thanks_crumb]
+other = "Gracias"
+[thanks_h1]
+other = "¡Gracias!"
+[thanks_sub]
+other = "Su mensaje está en camino — nos pondremos en contacto pronto."
+[thanks_body]
+other = "Gracias por comunicarse con Bridge Public Schools. Un miembro de nuestro equipo le responderá. A medida que se acerca nuestra apertura en otoño de 2027 en Yakima, compartiremos detalles de inscripción, sesiones informativas y fechas clave."
+[thanks_btn_home]
+other = "Volver al inicio"
+[thanks_btn_news]
+other = "Lea nuestras noticias"

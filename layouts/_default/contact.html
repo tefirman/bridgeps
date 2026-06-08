@@ -1,0 +1,94 @@
+{{ define "head" }}
+<style>
+  .contact-form{background:#fff;border:1px solid var(--line);border-radius:12px;padding:34px;box-shadow:var(--shadow);}
+  .contact-form .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .contact-form label{font-family:"Saira Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:13px;color:var(--navy);display:block;margin-bottom:6px;}
+  .contact-form .opt{font-weight:600;opacity:.55;}
+  .contact-form input,.contact-form select,.contact-form textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:6px;font:inherit;font-size:15.5px;margin-bottom:16px;color:var(--ink);background:#fff;}
+  .contact-form textarea{resize:vertical;min-height:130px;}
+  .contact-form .btn{font-size:17px;padding:15px 30px;}
+  .help{background:var(--mist);}
+  .help .wrap{padding:80px 36px;}
+  .hcards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px;}
+  .hcard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;border-top:4px solid var(--blue);}
+  .hcard:nth-child(2){border-top-color:var(--green);}
+  .hcard:nth-child(3){border-top-color:var(--navy);}
+  .hcard h3{font-family:"Saira Condensed";font-weight:800;text-transform:uppercase;font-size:21px;color:var(--navy);margin:0 0 8px;}
+  .hcard p{font-size:15px;color:rgba(21,42,60,.78);}
+  @media(max-width:920px){.hcards{grid-template-columns:1fr;}.contact-form .row2{grid-template-columns:1fr;}}
+</style>
+{{ end }}
+
+{{ define "main" }}
+<main>
+  <section class="phero">
+    <div class="wrap">
+      <div class="crumbs"><a href="{{ "" | relLangURL }}">{{ T "crumb_home" }}</a> <span>/</span> <span>{{ T "contact_crumb" }}</span></div>
+      <h1>{{ T "contact_h1" }}</h1>
+      <p class="sub">{{ T "contact_sub" }}</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="contact-grid">
+        <!-- FORM -->
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/mykawzlg" method="POST">
+          <div class="row2">
+            <div>
+              <label>{{ T "contact_f_name" }}</label>
+              <input type="text" name="name" placeholder="{{ T "form_name_ph" }}" required>
+            </div>
+            <div>
+              <label>{{ T "contact_f_email" }}</label>
+              <input type="email" name="email" placeholder="{{ T "form_email_ph" }}" required>
+            </div>
+          </div>
+          <label>{{ T "contact_f_phone" }} <span class="opt">{{ T "contact_f_phone_opt" }}</span></label>
+          <input type="tel" name="phone" placeholder="(509) 000-0000">
+          <label>{{ T "contact_f_subject" }}</label>
+          <select name="subject">
+            <option>{{ T "contact_f_opt1" }}</option>
+            <option>{{ T "contact_f_opt2" }}</option>
+            <option>{{ T "contact_f_opt3" }}</option>
+            <option>{{ T "contact_f_opt4" }}</option>
+            <option>{{ T "contact_f_opt5" }}</option>
+          </select>
+          <label>{{ T "contact_f_message" }}</label>
+          <textarea name="message" placeholder="{{ T "contact_f_message_ph" }}" required></textarea>
+          <input type="hidden" name="_subject" value="Contact form submission">
+          <input type="hidden" name="_next" value="{{ "thanks/" | absLangURL }}">
+          <button type="submit" class="btn btn-primary">{{ T "contact_f_send" }} <span class="ar">→</span></button>
+        </form>
+
+        <!-- INFO -->
+        <div>
+          <div class="kick">{{ T "contact_info_kick" }}</div>
+          <h2 class="disp" style="font-size:30px;margin:12px 0 22px">Bridge Public Schools</h2>
+          <div class="info-list">
+            <div class="it"><div class="ic"><i></i></div><div><h4>{{ T "contact_info_loc_h" }}</h4><p>{{ T "contact_info_loc_p" }}</p></div></div>
+            <div class="it"><div class="ic"><i style="background:var(--green)"></i></div><div><h4>{{ T "contact_info_best_h" }}</h4><p>{{ T "contact_info_best_p" }}</p></div></div>
+            <div class="it"><div class="ic"><i style="background:var(--navy)"></i></div><div><h4>{{ T "contact_info_open_h" }}</h4><p>{{ T "contact_info_open_p" | safeHTML }}</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE CAN HELP -->
+  <section class="help">
+    <div class="wrap">
+      <div class="head" style="margin-bottom:36px">
+        <div class="num">02</div>
+        <h2>{{ T "contact_help_h2" }}</h2>
+        <p class="lead">{{ T "contact_help_lead" }}</p>
+      </div>
+      <div class="hcards">
+        <div class="hcard"><h3>{{ T "contact_help1_h" }}</h3><p>{{ T "contact_help1_p" }}</p></div>
+        <div class="hcard"><h3>{{ T "contact_help2_h" }}</h3><p>{{ T "contact_help2_p" }}</p></div>
+        <div class="hcard"><h3>{{ T "contact_help3_h" }}</h3><p>{{ T "contact_help3_p" }}</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}
