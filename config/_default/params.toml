@@ -48,6 +48,9 @@ footerLogo = ""
 # Don't show "since" year range in footer
 since = 2026
 
+# Formspree form ID for the contact form (submissions forward to Rolando's email)
+formspreeID = "mykawzlg"
+
 # Author / School info
 [author]
 name = "Bridge Public Schools"

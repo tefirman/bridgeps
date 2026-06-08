@@ -1,0 +1,88 @@
+{{- /*
+  Contact form shortcode — posts to Formspree, which forwards submissions
+  to the email configured on the Formspree form (Rolando's address).
+
+  Usage in markdown:
+    {{< contact-form >}}
+
+  Setup:
+    1. Create a free form at https://formspree.io (sign in with the address
+       that should receive submissions, or set the recipient in the form's
+       settings — it does NOT have to match the site owner's email).
+    2. Copy the form's endpoint ID (the part after /f/ in the action URL).
+    3. Set it below, or override per-page in front matter / params:
+         params.formspreeID = "xxxxxxxx"
+*/ -}}
+{{- $_hugo_config := `{ "version": 1 }` -}}
+{{- $id := .Get "id" | default site.Params.formspreeID | default "YOUR_FORM_ID" -}}
+<form
+  class="contact-form"
+  action="https://formspree.io/f/{{ $id }}"
+  method="POST"
+>
+  <p>
+    <label for="cf-name">Name</label>
+    <input type="text" id="cf-name" name="name" required>
+  </p>
+  <p>
+    <label for="cf-email">Your email</label>
+    <input type="email" id="cf-email" name="email" required>
+  </p>
+  <p>
+    <label for="cf-phone">Phone <span class="cf-optional">(optional)</span></label>
+    <input type="tel" id="cf-phone" name="phone">
+  </p>
+  <p>
+    <label for="cf-subject">I'm reaching out about</label>
+    <select id="cf-subject" name="subject">
+      <option>Enrollment / prospective family</option>
+      <option>Community partnership</option>
+      <option>Career / educator opportunity</option>
+      <option>General question</option>
+    </select>
+  </p>
+  <p>
+    <label for="cf-message">Message</label>
+    <textarea id="cf-message" name="message" rows="6" required></textarea>
+  </p>
+  {{- /* Honeypot: bots fill this hidden field; Formspree drops those submissions. */ -}}
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+  <p>
+    <button type="submit">Send message</button>
+  </p>
+</form>
+
+<style>
+  .contact-form { max-width: 40rem; }
+  .contact-form p { margin: 0 0 1.1rem; }
+  .contact-form label {
+    display: block;
+    margin-bottom: .35rem;
+    font-weight: 600;
+  }
+  .contact-form .cf-optional { font-weight: 400; opacity: .65; }
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    width: 100%;
+    padding: .6rem .7rem;
+    font: inherit;
+    color: inherit;
+    background: var(--card-background, transparent);
+    border: 1px solid var(--accent, #999);
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  .contact-form textarea { resize: vertical; }
+  .contact-form button {
+    padding: .65rem 1.4rem;
+    font: inherit;
+    font-weight: 600;
+    color: var(--card-background, #fff);
+    background: var(--accent, #555);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .contact-form button:hover { opacity: .9; }
+</style>
