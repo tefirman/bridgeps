@@ -39,4 +39,4 @@ Mr. Posada's personal background as the son of immigrant parents and a first-gen
 
 ### Board of Directors
 
-Learn more about our [Board Members](/board/).
+Learn more about our [Board Members](/about/board/).

@@ -30,6 +30,9 @@ mainSections = ["news"]
 # Navigation position
 mobileNavigation = "left"
 
+# Label for the language switcher in the nav (shown when multilingual)
+languageMenuName = "Idioma"
+
 # Light mode by default (better for school accessibility)
 enforceLightMode = false
 
