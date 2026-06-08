@@ -21,7 +21,7 @@ Bridge Public Schools is a nonprofit public charter school network committed to 
 ### Get Involved
 
 - Learn more [about us](/about/mission/) and our leadership team
-- Explore our [academic programs](/about/programs/)
+- Explore our [educational model](/about/educational-model/)
 - Start the [admissions process](/contact/)
 - [Contact us](/contact/) with questions
 

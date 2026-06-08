@@ -25,15 +25,9 @@
 
 [[main]]
   parent = "about"
-  name = "Programas"
-  url = "es/about/programs/"
+  name = "Modelo Educativo"
+  url = "es/about/educational-model/"
   weight = 23
-
-[[main]]
-  parent = "about"
-  name = "Plan de Estudios"
-  url = "es/about/curriculum/"
-  weight = 24
 
 [[main]]
   name = "Noticias"

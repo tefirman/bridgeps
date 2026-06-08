@@ -21,7 +21,7 @@ Bridge Public Schools es una red de escuelas públicas autónomas (charter) sin 
 ### Participe
 
 - Conozca más [sobre nosotros](/es/about/mission/) y nuestro equipo de liderazgo
-- Explore nuestros [programas académicos](/es/about/programs/)
+- Explore nuestro [modelo educativo](/es/about/educational-model/)
 - Inicie el [proceso de admisión](/es/contact/)
 - [Contáctenos](/es/contact/) con sus preguntas
 

@@ -24,15 +24,9 @@
 
 [[main]]
   parent = "about"
-  name = "Programs"
-  url = "about/programs/"
+  name = "Educational Model"
+  url = "about/educational-model/"
   weight = 23
-
-[[main]]
-  parent = "about"
-  name = "Curriculum"
-  url = "about/curriculum/"
-  weight = 24
 
 [[main]]
   name = "News"
