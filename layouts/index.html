@@ -1,58 +1,238 @@
+{{ define "head" }}
+<style>
+  /* hero */
+  .hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;}
+  .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 500px at 78% 30%,rgba(79,168,220,.22),transparent 60%);}
+  .hero .wrap{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:30px;padding:74px 36px 118px;align-items:center;}
+  .hero .idx{font-family:"Saira Condensed";font-weight:700;letter-spacing:.2em;font-size:13px;color:var(--blue-bright);display:flex;gap:14px;align-items:center;margin-bottom:22px;}
+  .hero .idx::before{content:"";width:46px;height:2px;background:var(--blue-bright);}
+  .hero h1{font-family:"Saira Condensed";font-weight:800;text-transform:uppercase;color:#fff;font-size:clamp(46px,5.6vw,82px);line-height:.92;letter-spacing:.004em;margin:0;}
+  .hero h1 .b{color:var(--blue-bright);}
+  .hero .sub{font-size:20px;color:rgba(255,255,255,.86);max-width:40ch;margin:26px 0 26px;}
+  .hero-cta{display:flex;gap:16px;flex-wrap:wrap;}
+  .hero-meta{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px 22px;font-family:"Saira Condensed";font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:14px;color:rgba(255,255,255,.82);}
+  .hero-meta span{display:inline-flex;align-items:center;gap:9px;}
+  .hero-meta span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green);}
+  .hero-art{position:relative;display:flex;justify-content:center;}
+  .hero-ring{position:relative;width:330px;height:330px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;}
+  .hero-ring::after{content:"";position:absolute;inset:-18px;border-radius:50%;border:1px dashed rgba(255,255,255,.18);}
+  .hero-ring img{width:118%;max-width:none;filter:drop-shadow(0 20px 30px rgba(0,0,0,.35));}
+
+  /* stat band */
+  .band{margin-top:-66px;position:relative;z-index:5;}
+  .band .inner{background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(4,1fr);}
+  .band .cell{padding:26px 28px;border-right:1px solid var(--line);}
+  .band .cell:last-child{border-right:0;}
+  .band .n{font-family:"Saira Condensed";font-weight:800;font-size:50px;line-height:.9;color:var(--navy);}
+  .band .n .u{color:var(--green);}
+  .band .l{font-size:14px;color:rgba(21,42,60,.72);margin-top:8px;font-weight:500;}
+
+  /* vision */
+  .vision{background:var(--navy-deep);color:#fff;}
+  .vision .wrap{padding:90px 36px;}
+  .vision .qmark{font-family:"Saira Condensed";font-weight:800;font-size:120px;line-height:.5;color:var(--blue);}
+  .vision q{quotes:none;font-family:"Saira Condensed";font-weight:600;font-size:clamp(28px,4vw,46px);line-height:1.16;display:block;max-width:24ch;margin:10px 0 0;}
+  .vision q .hl{color:var(--blue-bright);}
+  .vision .by{margin-top:24px;color:rgba(255,255,255,.6);font-size:15px;letter-spacing:.04em;}
+
+  /* founder */
+  .founder h2{margin:0;}
+  .founder p.bio{color:rgba(21,42,60,.84);margin-bottom:20px;}
+  .founder .fstats{margin:20px 0 26px;}
+
+  /* faq grid */
+  .faq{background:var(--mist);}
+  .faq .wrap{padding:86px 36px;}
+  .faq-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:46px;align-items:start;}
+
+  /* get involved */
+  .involve{background:var(--blue);color:#fff;position:relative;overflow:hidden;}
+  .involve .wrap{padding:82px 36px;position:relative;z-index:2;}
+  .involve .bison-bg{position:absolute;right:-40px;top:-30px;width:320px;opacity:.12;z-index:1;}
+  .involve .ihead{max-width:60ch;}
+  .involve h2{font-family:"Saira Condensed";font-weight:800;text-transform:uppercase;font-size:clamp(34px,4.6vw,56px);line-height:.96;color:#fff;margin:10px 0 0;}
+  .involve .ihead p{margin-top:14px;font-size:18px;color:rgba(255,255,255,.92);max-width:48ch;}
+  .igrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:38px;}
+  .icard{background:#fff;color:var(--ink);border-radius:12px;padding:30px;box-shadow:var(--shadow);}
+  .icard.dark{background:rgba(255,255,255,.07);color:#fff;border:1px solid rgba(255,255,255,.22);box-shadow:none;display:flex;flex-direction:column;}
+  .icard .ck{font-family:"Saira Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:13px;color:var(--blue);margin-bottom:6px;}
+  .icard.dark .ck{color:var(--blue-bright);}
+  .icard h3{font-family:"Saira Condensed";font-weight:800;text-transform:uppercase;font-size:26px;margin:0 0 14px;color:var(--navy);}
+  .icard.dark h3{color:#fff;}
+  .icard label{font-family:"Saira Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:12.5px;color:var(--navy);display:block;margin-bottom:6px;}
+  .icard input{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:6px;font:inherit;font-size:15.5px;margin-bottom:13px;color:var(--ink);}
+  .icard .btn{width:100%;justify-content:center;}
+  .icard .ok{display:none;margin-top:12px;color:var(--green-deep);font-weight:700;text-align:center;}
+  .icard.dark p{color:rgba(255,255,255,.9);font-size:16px;margin-bottom:18px;}
+  .icard.dark .ways{list-style:none;padding:0;margin:0 0 22px;display:flex;flex-direction:column;gap:12px;}
+  .icard.dark .ways li{position:relative;padding-left:26px;font-size:15.5px;color:rgba(255,255,255,.92);}
+  .icard.dark .ways li::before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:2px;background:var(--green);}
+  .icard.dark .btn{margin-top:auto;}
+
+  @media(max-width:920px){
+    .hero .wrap,.faq-grid,.igrid{grid-template-columns:1fr;}
+    .hero-art{display:none;}
+    .band .inner{grid-template-columns:1fr 1fr;}
+  }
+  @media(max-width:560px){
+    .band .inner{grid-template-columns:1fr;}
+  }
+</style>
+{{ end }}
+
 {{ define "main" }}
-<main class="homepage">
+<main>
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero_content">
-      {{ with .Site.Params.logo }}
-      <img src="{{ . | relURL }}" alt="{{ $.Site.Title }} logo" class="hero_logo">
-      {{ end }}
-      <h1>{{ .Site.Title }}</h1>
-      <p class="hero_tagline">{{ .Site.Params.introDescription }}</p>
+    <div class="wrap">
+      <div>
+        <div class="idx">{{ T "home_hero_idx" }}</div>
+        <h1>{{ T "home_hero_h1" | safeHTML }}</h1>
+        <p class="sub">{{ T "home_hero_sub" }}</p>
+        <div class="hero-cta">
+          <a href="#involve" class="btn btn-primary">{{ T "home_hero_cta1" }} <span class="ar">→</span></a>
+          <a href="{{ "about/educational-model/" | relLangURL }}" class="btn btn-out">{{ T "home_hero_cta2" }}</a>
+        </div>
+        <div class="hero-meta">
+          <span>{{ T "home_hero_meta1" }}</span>
+          <span>{{ T "home_hero_meta2" }}</span>
+          <span>{{ T "home_hero_meta3" | safeHTML }}</span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-ring"><img src="{{ "assets/bison.png" | relURL }}" alt="Bridge Public Schools bison"></div>
+      </div>
     </div>
   </section>
 
-  <section class="intro">
-    <div class="intro_content">
-      <h2>{{ T "home_mission_heading" }}</h2>
-      <p>{{ T "home_mission_body" | safeHTML }}</p>
+  <!-- STAT BAND -->
+  <div class="band">
+    <div class="wrap">
+      <div class="inner">
+        <div class="cell"><div class="n">200</div><div class="l">{{ T "home_band1_l" }}</div></div>
+        <div class="cell"><div class="n">K–12</div><div class="l">{{ T "home_band2_l" }}</div></div>
+        <div class="cell"><div class="n"><span class="u">$0</span></div><div class="l">{{ T "home_band3_l" }}</div></div>
+        <div class="cell"><div class="n">2027</div><div class="l">{{ T "home_band4_l" }}</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODEL -->
+  <section class="block" id="model">
+    <div class="wrap">
+      <div class="head">
+        <div class="num">01</div>
+        <h2>{{ T "home_model_h2" }}</h2>
+        <p class="lead">{{ T "home_model_lead" }}</p>
+      </div>
+      <div class="mlist">
+        <div class="mrow"><div class="mn">01</div><div><h3>{{ T "home_model1_h" | safeHTML }}</h3><p>{{ T "home_model1_p" }}</p></div></div>
+        <div class="mrow"><div class="mn">02</div><div><h3>{{ T "home_model2_h" | safeHTML }}</h3><p>{{ T "home_model2_p" }}</p></div></div>
+        <div class="mrow"><div class="mn">03</div><div><h3>{{ T "home_model3_h" | safeHTML }}</h3><p>{{ T "home_model3_p" }}</p></div></div>
+        <div class="mrow"><div class="mn">04</div><div><h3>{{ T "home_model4_h" | safeHTML }}</h3><p>{{ T "home_model4_p" }}</p></div></div>
+      </div>
     </div>
   </section>
 
-  <section class="links">
-    <div class="links_grid">
-      <a href="{{ "about/mission/" | relLangURL }}" class="link_card">
-        <h3>{{ T "home_card_about_title" }}</h3>
-        <p>{{ T "home_card_about_desc" }}</p>
-      </a>
-      <a href="{{ "contact/" | relLangURL }}" class="link_card">
-        <h3>{{ T "home_card_contact_title" }}</h3>
-        <p>{{ T "home_card_contact_desc" }}</p>
-      </a>
+  <!-- VALUES -->
+  <section class="vstrip">
+    <div class="wrap">
+      <div class="head" style="margin-bottom:6px">
+        <div class="num">02</div>
+        <h2>{{ T "home_values_h2" }}</h2>
+        <p class="lead">{{ T "home_values_lead" }}</p>
+      </div>
+      <div class="vrow">
+        <div class="vcell"><div class="t"><i style="background:var(--navy)"></i>{{ T "home_val1_t" }}</div><p>{{ T "home_val1_p" }}</p></div>
+        <div class="vcell"><div class="t"><i style="background:var(--green)"></i>{{ T "home_val2_t" }}</div><p>{{ T "home_val2_p" }}</p></div>
+        <div class="vcell"><div class="t"><i style="background:var(--blue)"></i>{{ T "home_val3_t" }}</div><p>{{ T "home_val3_p" }}</p></div>
+        <div class="vcell"><div class="t"><i style="background:var(--navy-deep)"></i>{{ T "home_val4_t" }}</div><p>{{ T "home_val4_p" }}</p></div>
+      </div>
     </div>
   </section>
 
-  {{ with .Content }}
-  <section class="page_content">
-    <div class="content_wrapper">
-      {{ . }}
+  <!-- VISION -->
+  <section class="vision">
+    <div class="wrap">
+      <div class="qmark">“</div>
+      <q>{{ T "home_vision_q" | safeHTML }}</q>
+      <div class="by">{{ T "home_vision_by" }}</div>
     </div>
   </section>
-  {{ end }}
 
-  {{ with (where .Site.RegularPages "Section" "news") }}
-  {{ if gt (len .) 0 }}
-  <section class="news_preview">
-    <h2>{{ T "home_latest_news" }}</h2>
-    <ul>
-      {{ range first 3 . }}
-      <li>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-        <span class="news_date">{{ time.Format ":date_long" .Date }}</span>
-      </li>
-      {{ end }}
-    </ul>
-    <p><a href="{{ "news/" | relLangURL }}">{{ T "home_view_all_news" }} &rarr;</a></p>
+  <!-- FOUNDER -->
+  <section class="block" id="founder">
+    <div class="wrap founder">
+      <div class="portrait"><div class="pc"><div class="initials">RP</div><small>{{ T "home_founder_portrait" }}</small></div></div>
+      <div>
+        <div class="kick">{{ T "home_founder_kick" | safeHTML }}</div>
+        <h2>Rolando Posada</h2>
+        <div class="role">{{ T "home_founder_role" }}</div>
+        <p class="bio">{{ T "home_founder_bio" }}</p>
+        <div class="fstats">
+          <div><div class="n">30</div><div class="l">{{ T "home_founder_stat1_l" }}</div></div>
+          <div><div class="n">100%</div><div class="l">{{ T "home_founder_stat2_l" }}</div></div>
+        </div>
+        <a href="{{ "about/mission/" | relLangURL }}" class="btn btn-outn">{{ T "home_founder_btn" }} <span class="ar">→</span></a>
+      </div>
+    </div>
   </section>
-  {{ end }}
-  {{ end }}
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="wrap faq-grid">
+      <div>
+        <div class="kick">{{ T "home_faq_kick" }}</div>
+        <h2 class="disp" style="font-size:clamp(34px,4.4vw,52px);margin-top:10px">{{ T "home_faq_h2" }}</h2>
+        <p style="margin-top:14px;color:rgba(21,42,60,.78)">{{ T "home_faq_p" }}</p>
+        <a href="{{ "contact/" | relLangURL }}" class="btn btn-blue" style="margin-top:22px">{{ T "home_faq_btn" }} <span class="ar">→</span></a>
+      </div>
+      <div>
+        <details class="acc" open><summary><span>{{ T "home_faq_q1" }}</span><span class="plus"></span></summary><div class="ans">{{ T "home_faq_a1" }}</div></details>
+        <details class="acc"><summary><span>{{ T "home_faq_q2" }}</span><span class="plus"></span></summary><div class="ans">{{ T "home_faq_a2" }}</div></details>
+        <details class="acc"><summary><span>{{ T "home_faq_q3" }}</span><span class="plus"></span></summary><div class="ans">{{ T "home_faq_a3" }}</div></details>
+        <details class="acc"><summary><span>{{ T "home_faq_q4" }}</span><span class="plus"></span></summary><div class="ans">{{ T "home_faq_a4" }}</div></details>
+        <details class="acc"><summary><span>{{ T "home_faq_q5" }}</span><span class="plus"></span></summary><div class="ans">{{ T "home_faq_a5" }}</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET INVOLVED -->
+  <section class="involve" id="involve">
+    <img class="bison-bg" src="{{ "assets/logo-transparent.png" | relURL }}" alt="">
+    <div class="wrap">
+      <div class="ihead">
+        <div class="kick" style="color:#fff;opacity:.85">{{ T "home_inv_kick" }}</div>
+        <h2>{{ T "home_inv_h2" }}</h2>
+        <p>{{ T "home_inv_p" }}</p>
+      </div>
+      <div class="igrid">
+        <div class="icard">
+          <div class="ck">{{ T "home_inv_fam_ck" }}</div>
+          <h3>{{ T "home_inv_fam_h" }}</h3>
+          <form action="https://formspree.io/f/mykawzlg" method="POST">
+            <label>{{ T "home_inv_fam_name" }}</label>
+            <input type="text" name="name" placeholder="{{ T "home_inv_fam_name_ph" }}" required>
+            <label>{{ T "home_inv_fam_email" }}</label>
+            <input type="email" name="email" placeholder="{{ T "home_inv_fam_email_ph" }}" required>
+            <input type="hidden" name="_subject" value="Interest list signup (homepage)">
+            <input type="hidden" name="_next" value="{{ "thanks/" | absLangURL }}">
+            <button type="submit" class="btn btn-primary">{{ T "home_inv_fam_btn" }}</button>
+          </form>
+        </div>
+        <div class="icard dark">
+          <div class="ck">{{ T "home_inv_com_ck" }}</div>
+          <h3>{{ T "home_inv_com_h" }}</h3>
+          <p>{{ T "home_inv_com_p" }}</p>
+          <ul class="ways">
+            <li>{{ T "home_inv_com_w1" | safeHTML }}</li>
+            <li>{{ T "home_inv_com_w2" }}</li>
+            <li>{{ T "home_inv_com_w3" }}</li>
+          </ul>
+          <a href="{{ "contact/" | relLangURL }}" class="btn btn-out">{{ T "home_inv_com_btn" }} <span class="ar">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 {{ end }}

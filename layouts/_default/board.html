@@ -1,0 +1,66 @@
+{{ define "head" }}
+<style>
+  .person.soon{background:repeating-linear-gradient(135deg,#fff 0 12px,var(--mist) 12px 24px);align-items:center;}
+  .person.soon .av{background:var(--mist-2);color:var(--navy);}
+  .gov{background:var(--mist);}
+  .gov .wrap{padding:64px 36px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;}
+  .gov .ic{width:64px;height:64px;border-radius:12px;background:var(--navy);display:flex;align-items:center;justify-content:center;flex:none;}
+  .gov .ic i{width:24px;height:24px;border-radius:5px;background:var(--blue-bright);display:block;}
+  @media(max-width:920px){.gov .wrap{grid-template-columns:1fr;}}
+</style>
+{{ end }}
+
+{{ define "main" }}
+<main>
+  <section class="phero">
+    <div class="wrap">
+      <div class="crumbs"><a href="{{ "" | relLangURL }}">{{ T "crumb_home" }}</a> <span>/</span> <span>{{ T "board_crumb" }}</span></div>
+      <h1>{{ T "board_h1" }}</h1>
+      <p class="sub">{{ T "board_sub" }}</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="head">
+        <div class="num">01</div>
+        <h2>{{ T "board_h2" }}</h2>
+        <p class="lead">{{ T "board_lead" }}</p>
+      </div>
+      <div class="people">
+        <div class="person">
+          <div class="av">SG</div>
+          <div>
+            <h3>Sam Goessling</h3>
+            <div class="pr">{{ T "board_member_role" }}</div>
+            <p>{{ T "board_bio_soon" }}</p>
+            <a href="mailto:sam@excellentschoolswa.org">sam@excellentschoolswa.org</a>
+          </div>
+        </div>
+        <div class="person soon">
+          <div class="av">+</div>
+          <div>
+            <h3>{{ T "board_more_h" }}</h3>
+            <div class="pr">{{ T "board_more_role" }}</div>
+            <p>{{ T "board_more_p" }}</p>
+            <a href="{{ "contact/" | relLangURL }}">{{ T "board_more_link" }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gov">
+    <div class="wrap">
+      <div class="ic"><i></i></div>
+      <div>
+        <h2 class="disp" style="font-size:30px;margin-bottom:10px">{{ T "board_gov_h2" | safeHTML }}</h2>
+        <p style="font-size:17.5px;color:#28384a;max-width:70ch">{{ T "board_gov_p" }}</p>
+        <a href="{{ "contact/" | relLangURL }}" class="btn btn-blue" style="margin-top:20px">{{ T "board_gov_btn" }} <span class="ar">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "cta-band.html" (dict "kick" "board_cta_kick" "h2" "board_cta_h2" "p" "board_cta_p") }}
+</main>
+{{ end }}

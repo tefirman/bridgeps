@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ T "site_description" }}{{ end }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ "assets/site.css" | relURL }}?v=3">
+{{ block "head" . }}{{ end }}
+</head>
+<body>
+
+<div class="util">
+  <div class="wrap">
+    <span class="pill">{{ T "util_pill" }}</span>
+    <span class="msg">{{ T "util_msg" | safeHTML }}</span>
+    <span class="lang">
+      {{- range .AllTranslations -}}
+        {{- if eq .Language.Lang $.Site.Language.Lang -}}
+          <button class="on">{{ upper .Language.Lang }}</button>
+        {{- else -}}
+          <a href="{{ .RelPermalink }}"><button>{{ upper .Language.Lang }}</button></a>
+        {{- end -}}
+      {{- end -}}
+    </span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="{{ "" | relLangURL }}"><img src="{{ "assets/bison.png" | relURL }}" alt=""><span class="brand-word"><b>BRIDGE</b><i>PUBLIC SCHOOLS</i></span></a>
+    <nav class="nav-links">
+      {{- $p := $.RelPermalink -}}
+      <a href="{{ "about/mission/" | relLangURL }}"{{ if eq $p ("about/mission/" | relLangURL) }} class="active"{{ end }}>{{ T "nav_about" }}</a>
+      <a href="{{ "about/educational-model/" | relLangURL }}"{{ if eq $p ("about/educational-model/" | relLangURL) }} class="active"{{ end }}>{{ T "nav_model" }}</a>
+      <a href="{{ "about/board/" | relLangURL }}"{{ if eq $p ("about/board/" | relLangURL) }} class="active"{{ end }}>{{ T "nav_board" }}</a>
+      <a href="{{ "news/" | relLangURL }}"{{ if hasPrefix $p ("news/" | relLangURL) }} class="active"{{ end }}>{{ T "nav_news" }}</a>
+      <a href="{{ "contact/" | relLangURL }}"{{ if eq $p ("contact/" | relLangURL) }} class="active"{{ end }}>{{ T "nav_contact" }}</a>
+    </nav>
+    <a href="{{ "contact/" | relLangURL }}" class="btn btn-primary">{{ T "nav_cta" }}</a>
+  </div>
+</header>
+
+{{ block "main" . }}{{ end }}
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="brand" href="{{ "" | relLangURL }}"><img src="{{ "assets/logo-transparent.png" | relURL }}" style="height:60px" alt="Bridge Public Schools"></a>
+        <p class="mt">{{ T "footer_blurb" }}</p>
+      </div>
+      <div class="fcol"><h4>{{ T "footer_explore" }}</h4>
+        <a href="{{ "about/mission/" | relLangURL }}">{{ T "footer_mission" }}</a>
+        <a href="{{ "about/board/" | relLangURL }}">{{ T "footer_board" }}</a>
+        <a href="{{ "about/educational-model/" | relLangURL }}">{{ T "footer_model" }}</a>
+        <a href="{{ "news/" | relLangURL }}">{{ T "nav_news" }}</a>
+      </div>
+      <div class="fcol"><h4>{{ T "footer_families" }}</h4>
+        <a href="{{ "contact/" | relLangURL }}">{{ T "footer_join" }}</a>
+        <a href="{{ "contact/" | relLangURL }}">{{ T "footer_contact" }}</a>
+      </div>
+      <div class="fcol"><h4>{{ T "footer_connect" }}</h4>
+        <a href="{{ "contact/" | relLangURL }}">{{ T "footer_email" }}</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Bridge Public Schools. <span>{{ T "footer_rights" }}</span></span>
+      <span class="nd">{{ T "footer_nondiscrim" }}</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+{{ define "head" }}
+<style>
+  .plan{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  .pcol{padding:28px 24px;border-right:1px solid var(--line);position:relative;background:#fff;}
+  .pcol:last-child{border-right:0;}
+  .pcol.full{background:var(--navy);color:#fff;}
+  .pcol .yr{font-family:"Saira Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:12.5px;color:var(--blue);}
+  .pcol.full .yr{color:var(--blue-bright);}
+  .pcol .gr{font-family:"Saira Condensed";font-weight:800;font-size:34px;color:var(--navy);line-height:1;margin:10px 0 8px;}
+  .pcol.full .gr{color:#fff;}
+  .pcol p{font-size:14px;color:rgba(21,42,60,.74);}
+  .pcol.full p{color:rgba(255,255,255,.8);}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:46px;}
+  .feature{background:var(--mist);}
+  .feature .wrap{padding:80px 36px;}
+  @media(max-width:920px){.plan{grid-template-columns:1fr 1fr;}.twocol{grid-template-columns:1fr;}}
+</style>
+{{ end }}
+
+{{ define "main" }}
+<main>
+  <section class="phero">
+    <div class="wrap">
+      <div class="crumbs"><a href="{{ "" | relLangURL }}">{{ T "crumb_home" }}</a> <span>/</span> <span>{{ T "model_crumb" }}</span></div>
+      <h1>{{ T "model_h1" }}</h1>
+      <p class="sub">{{ T "model_sub" }}</p>
+    </div>
+  </section>
+
+  <!-- PILLARS -->
+  <section class="block">
+    <div class="wrap">
+      <div class="head">
+        <div class="num">01</div>
+        <h2>{{ T "model_teach_h2" }}</h2>
+        <p class="lead">{{ T "model_teach_lead" }}</p>
+      </div>
+      <div class="mlist">
+        <div class="mrow"><div class="mn">01</div><div><h3>{{ T "model_p1_h" | safeHTML }}</h3><p>{{ T "model_p1_p" }}</p></div></div>
+        <div class="mrow"><div class="mn">02</div><div><h3>{{ T "model_p2_h" | safeHTML }}</h3><p>{{ T "model_p2_p" }}</p></div></div>
+        <div class="mrow"><div class="mn">03</div><div><h3>{{ T "model_p3_h" | safeHTML }}</h3><p>{{ T "model_p3_p" }}</p></div></div>
+        <div class="mrow"><div class="mn">04</div><div><h3>{{ T "model_p4_h" | safeHTML }}</h3><p>{{ T "model_p4_p" }}</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAUNCH PLAN -->
+  <section class="feature">
+    <div class="wrap">
+      <div class="head" style="margin-bottom:36px">
+        <div class="num">02</div>
+        <h2>{{ T "model_plan_h2" }}</h2>
+        <p class="lead">{{ T "model_plan_lead" }}</p>
+      </div>
+      <div class="plan">
+        <div class="pcol"><div class="yr">{{ T "model_y1_yr" }}</div><div class="gr">K &amp; 6</div><p>{{ T "model_y1_p" }}</p></div>
+        <div class="pcol"><div class="yr">{{ T "model_y2_yr" }}</div><div class="gr">+2</div><p>{{ T "model_y2_p" }}</p></div>
+        <div class="pcol"><div class="yr">{{ T "model_y3_yr" }}</div><div class="gr">+2</div><p>{{ T "model_y3_p" }}</p></div>
+        <div class="pcol full"><div class="yr">{{ T "model_y4_yr" }}</div><div class="gr">K–12</div><p>{{ T "model_y4_p" }}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANGUAGE + CULTURE -->
+  <section class="block">
+    <div class="wrap">
+      <div class="twocol">
+        <div>
+          <div class="kick">{{ T "model_lang_kick" }}</div>
+          <h2 class="disp" style="font-size:32px;margin:12px 0 16px">{{ T "model_lang_h2" }}</h2>
+          <div class="prose">
+            <p>{{ T "model_lang_p1" }}</p>
+            <p>{{ T "model_lang_p2" }}</p>
+          </div>
+        </div>
+        <div>
+          <div class="kick">{{ T "model_cul_kick" }}</div>
+          <h2 class="disp" style="font-size:32px;margin:12px 0 16px">{{ T "model_cul_h2" }}</h2>
+          <div class="prose">
+            <p>{{ T "model_cul_p1" }}</p>
+            <p>{{ T "model_cul_p2" }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "cta-band.html" (dict "kick" "model_cta_kick" "h2" "model_cta_h2" "p" "model_cta_p") }}
+</main>
+{{ end }}

@@ -1,0 +1,20 @@
+{{/* Reusable bottom CTA band with interest-list form. Params: kick, h2, p (i18n keys) */}}
+<section class="cta-band">
+  <img class="bison-bg" src="{{ "assets/logo-transparent.png" | relURL }}" alt="">
+  <div class="wrap">
+    <div>
+      <div class="kick" style="color:#fff;opacity:.85">{{ T .kick }}</div>
+      <h2>{{ T .h2 }}</h2>
+      <p>{{ T .p }}</p>
+    </div>
+    <form class="signup-card" action="https://formspree.io/f/mykawzlg" method="POST">
+      <label>{{ T "form_name" }}</label>
+      <input type="text" name="name" placeholder="{{ T "form_name_ph" }}" required>
+      <label>{{ T "form_email" }}</label>
+      <input type="email" name="email" placeholder="{{ T "form_email_ph" }}" required>
+      <input type="hidden" name="_subject" value="Interest list signup">
+      <input type="hidden" name="_next" value="{{ "thanks/" | absLangURL }}">
+      <button type="submit" class="btn btn-primary">{{ T "form_join_btn" }}</button>
+    </form>
+  </div>
+</section>
