@@ -7,3 +7,5 @@
   title = "Bridge Public Schools"
   LanguageName = "Español"
   weight = 2
+  [es.params]
+    introDescription = "Demostrando lo posible. Cada niño. Rumbo a la universidad."

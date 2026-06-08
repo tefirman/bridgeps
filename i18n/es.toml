@@ -1,0 +1,25 @@
+# Homepage strings (Spanish). Mirrors i18n/en.toml.
+
+[home_mission_heading]
+other = "Nuestra Misión"
+
+[home_mission_body]
+other = "Bridge Public Schools es una red de escuelas públicas autónomas (charter) sin fines de lucro, comprometida con <strong>demostrar lo posible</strong>. Ofrecemos escuelas públicas gratuitas, de inscripción abierta y altas expectativas en comunidades históricamente desatendidas, que preparan a cada estudiante para tener éxito en la universidad y en la vida."
+
+[home_card_about_title]
+other = "Nosotros"
+
+[home_card_about_desc]
+other = "Conozca nuestra misión, nuestros valores y nuestro equipo de liderazgo."
+
+[home_card_contact_title]
+other = "Contacto"
+
+[home_card_contact_desc]
+other = "Comuníquese con nuestro equipo."
+
+[home_latest_news]
+other = "Últimas Noticias"
+
+[home_view_all_news]
+other = "Ver todas las noticias"

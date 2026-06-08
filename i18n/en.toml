@@ -1,0 +1,25 @@
+# Homepage strings (English). Project i18n overrides/extends the theme's.
+
+[home_mission_heading]
+other = "Our Mission"
+
+[home_mission_body]
+other = "Bridge Public Schools is a nonprofit public charter school network committed to <strong>proving the possible</strong>. We provide high-expectations, tuition-free, open-enrollment public schools in historically underserved communities that prepare every student for success in college and life."
+
+[home_card_about_title]
+other = "About Us"
+
+[home_card_about_desc]
+other = "Learn about our mission, values, and leadership team."
+
+[home_card_contact_title]
+other = "Contact"
+
+[home_card_contact_desc]
+other = "Get in touch with our team."
+
+[home_latest_news]
+other = "Latest News"
+
+[home_view_all_news]
+other = "View all news"

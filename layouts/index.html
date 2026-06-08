@@ -12,20 +12,20 @@
 
   <section class="intro">
     <div class="intro_content">
-      <h2>Our Mission</h2>
-      <p>Bridge Public Schools is a nonprofit public charter school network committed to <strong>proving the possible</strong>. We provide high-expectations, tuition-free, open-enrollment public schools in historically underserved communities that prepare every student for success in college and life.</p>
+      <h2>{{ T "home_mission_heading" }}</h2>
+      <p>{{ T "home_mission_body" | safeHTML }}</p>
     </div>
   </section>
 
   <section class="links">
     <div class="links_grid">
-      <a href="{{ "about/" | relURL }}" class="link_card">
-        <h3>About Us</h3>
-        <p>Learn about our mission, values, and leadership team.</p>
+      <a href="{{ "about/mission/" | relLangURL }}" class="link_card">
+        <h3>{{ T "home_card_about_title" }}</h3>
+        <p>{{ T "home_card_about_desc" }}</p>
       </a>
-      <a href="{{ "contact/" | relURL }}" class="link_card">
-        <h3>Contact</h3>
-        <p>Get in touch with our team.</p>
+      <a href="{{ "contact/" | relLangURL }}" class="link_card">
+        <h3>{{ T "home_card_contact_title" }}</h3>
+        <p>{{ T "home_card_contact_desc" }}</p>
       </a>
     </div>
   </section>
@@ -41,16 +41,16 @@
   {{ with (where .Site.RegularPages "Section" "news") }}
   {{ if gt (len .) 0 }}
   <section class="news_preview">
-    <h2>Latest News</h2>
+    <h2>{{ T "home_latest_news" }}</h2>
     <ul>
       {{ range first 3 . }}
       <li>
         <a href="{{ .Permalink }}">{{ .Title }}</a>
-        <span class="news_date">{{ .Date.Format "January 2, 2006" }}</span>
+        <span class="news_date">{{ time.Format ":date_long" .Date }}</span>
       </li>
       {{ end }}
     </ul>
-    <p><a href="{{ "news/" | relURL }}">View all news &rarr;</a></p>
+    <p><a href="{{ "news/" | relLangURL }}">{{ T "home_view_all_news" }} &rarr;</a></p>
   </section>
   {{ end }}
   {{ end }}
