@@ -96,7 +96,8 @@ details.acc .ans{padding:0 22px 20px;color:rgba(21,42,60,.82);font-size:16px;max
 .ans .slot{color:var(--blue);font-weight:700;}
 
 /* portrait placeholder */
-.portrait{aspect-ratio:1/1.12;border:1px solid var(--line);border-radius:8px;background:repeating-linear-gradient(135deg,#fff 0 14px,var(--mist) 14px 28px);position:relative;display:flex;align-items:center;justify-content:center;}
+.portrait{aspect-ratio:1/1.12;border:1px solid var(--line);border-radius:8px;background:repeating-linear-gradient(135deg,#fff 0 14px,var(--mist) 14px 28px);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.portrait>img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;}
 .portrait .pc{display:flex;flex-direction:column;align-items:center;gap:12px;}
 .portrait .initials{width:104px;height:104px;border-radius:8px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:"Saira Condensed";font-weight:800;font-size:46px;}
 .portrait small{font-family:"Saira Condensed";font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:11px;color:rgba(21,42,60,.5);text-align:center;}
