@@ -15,7 +15,7 @@ Board Member
 
 [sam@excellentschoolswa.org](mailto:sam@excellentschoolswa.org)
 
-*Bio coming soon.*
+Dr. Sam Goessling has worked in education for more than 22 years as a teacher, principal, district administrator, and fundraising leader. He earned his B.A. from the University of Richmond and his master's in education leadership from the Harvard Graduate School of Education. He also holds a Ph.D. from the University of Texas at Austin.
 
 ---
 

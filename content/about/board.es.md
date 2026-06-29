@@ -15,7 +15,7 @@ Miembro de la Junta
 
 [sam@excellentschoolswa.org](mailto:sam@excellentschoolswa.org)
 
-*Biografía próximamente.*
+El Dr. Sam Goessling ha trabajado en educación durante más de 22 años como maestro, director, administrador de distrito y líder de recaudación de fondos. Obtuvo su licenciatura en la Universidad de Richmond y su maestría en liderazgo educativo en la Escuela de Graduados en Educación de Harvard. También tiene un doctorado de la Universidad de Texas en Austin.
 
 ---
 
