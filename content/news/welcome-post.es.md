@@ -1,5 +1,5 @@
 ---
-title: "¡Bienvenidos a Nuestro Nuevo Sitio Web!"
+title: "¡Bienvenidos a nuestro nuevo sitio web!"
 date: 2026-01-29
 description: "Nos complace lanzar el nuevo sitio web de nuestra escuela."
 categories: ["Anuncios"]
