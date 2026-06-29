@@ -528,3 +528,9 @@ other = "Gracias por comunicarse con Bridge Public Schools. Un miembro de nuestr
 other = "Volver al inicio"
 [thanks_btn_news]
 other = "Lea nuestras noticias"
+
+# ── Theme overrides ──
+[recent_posts]
+other = "Publicaciones recientes"
+[tags]
+other = "Etiquetas"
