@@ -26,7 +26,7 @@ other = "Ver todas las noticias"
 
 # ── Shared shell (util bar, nav, footer) ──
 [site_description]
-other = "Una escuela pública chárter gratuita que abre en otoño de 2028 en Yakima, Washington. Demostrando lo posible — cada niño, rumbo a la universidad."
+other = "Una escuela pública chárter gratuita que planea abrir en otoño de 2028 en Yakima, Washington. Demostrando lo posible — cada niño, rumbo a la universidad."
 
 [util_pill]
 other = "En formación"
@@ -53,7 +53,7 @@ other = "Contacto"
 other = "Únase"
 
 [footer_blurb]
-other = "Una escuela pública chárter sin fines de lucro que abre en otoño de 2028 en Yakima, Washington — demostrando lo posible para cada estudiante."
+other = "Una escuela pública chárter sin fines de lucro que planea abrir en otoño de 2028 en Yakima, Washington — demostrando lo posible para cada estudiante."
 
 [footer_explore]
 other = "Explorar"
@@ -196,11 +196,11 @@ other = "Bridge planea abrir en otoño de 2028 en Yakima, Washington, comenzando
 [home_faq_q3]
 other = "¿Qué grados atenderán?"
 [home_faq_a3]
-other = "Comenzamos con kínder y sexto grado — 200 estudiantes en total — y agregamos dos grados cada año hasta llegar a todo K–12."
+other = "Planeamos comenzar con kínder y sexto grado — 200 estudiantes en total — y agregar dos grados cada año hasta llegar a todo K–12."
 [home_faq_q4]
 other = "¿Cómo puede informarse mi familia?"
 [home_faq_a4]
-other = "El mejor primer paso es unirse a nuestra lista de interés. Compartiremos detalles de inscripción, sesiones informativas y fechas clave directamente con usted al acercarnos a la apertura en otoño de 2028."
+other = "El mejor primer paso es unirse a nuestra lista de interés. Compartiremos detalles de inscripción, sesiones informativas y fechas clave directamente con usted al acercarnos a la apertura prevista para otoño de 2028."
 [home_faq_q5]
 other = "¿Cómo puedo apoyar a Bridge?"
 [home_faq_a5]
@@ -343,7 +343,7 @@ other = "Aulas ordenadas con rutinas claras; alumnos a quienes se les saluda por
 [model_plan_h2]
 other = "Nuestro plan de apertura"
 [model_plan_lead]
-other = "Bridge comienza con 200 estudiantes e incorpora dos grados más cada año, estableciendo bases sólidas en los primeros años de primaria, una trayectoria clara hacia la educación secundaria, la preparación universitaria, y así completará el ciclo integral de K-12."
+other = "Bridge planea comenzar con 200 estudiantes e incorporar dos grados más cada año, estableciendo bases sólidas en los primeros años de primaria, una trayectoria clara hacia la educación secundaria, la preparación universitaria, y así completará el ciclo integral de K-12."
 [model_y1_yr]
 other = "Año 1 · Otoño del 2028"
 [model_y1_p]
@@ -467,7 +467,7 @@ other = "Mejor forma de contactarnos"
 [contact_info_best_p]
 other = "Use el formulario — un miembro de nuestro equipo le responderá."
 [contact_info_open_h]
-other = "Apertura"
+other = "Apertura prevista"
 [contact_info_open_p]
 other = "Otoño del 2028 · Iniciaremos con Kinder y 6.º grado"
 [contact_info_follow_h]
@@ -501,7 +501,7 @@ other = "Leer"
 [news_sub_h3]
 other = "Manténgase al tanto"
 [news_sub_p]
-other = "Reciba anuncios y fechas clave por correo a medida que se acerca la apertura en otoño de 2028."
+other = "Reciba anuncios y fechas clave por correo a medida que se acerca la apertura prevista para otoño de 2028."
 [news_sub_email_ph]
 other = "Su correo electrónico"
 [news_sub_btn]
@@ -523,7 +523,7 @@ other = "¡Gracias!"
 [thanks_sub]
 other = "Su mensaje está en camino — nos pondremos en contacto pronto."
 [thanks_body]
-other = "Gracias por comunicarse con Bridge Public Schools. Un miembro de nuestro equipo le responderá. A medida que se acerca nuestra apertura en otoño de 2028 en Yakima, compartiremos detalles de inscripción, sesiones informativas y fechas clave."
+other = "Gracias por comunicarse con Bridge Public Schools. Un miembro de nuestro equipo le responderá. A medida que se acerca nuestra apertura prevista para otoño de 2028 en Yakima, compartiremos detalles de inscripción, sesiones informativas y fechas clave."
 [thanks_btn_home]
 other = "Volver al inicio"
 [thanks_btn_news]
