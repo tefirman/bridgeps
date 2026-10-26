@@ -26,7 +26,7 @@ other = "View all news"
 
 # ── Shared shell (util bar, nav, footer) ──
 [site_description]
-other = "A tuition-free public charter school opening Fall 2028 in Yakima, Washington. Proving the possible — every child, college bound."
+other = "A tuition-free public charter school planning to open in Fall 2028 in Yakima, Washington. Proving the possible — every child, college bound."
 
 [util_pill]
 other = "Now forming"
@@ -53,7 +53,7 @@ other = "Contact"
 other = "Join the list"
 
 [footer_blurb]
-other = "A nonprofit public charter school opening Fall 2028 in Yakima, Washington — proving the possible for every student."
+other = "A nonprofit public charter school planning to open in Fall 2028 in Yakima, Washington — proving the possible for every student."
 
 [footer_explore]
 other = "Explore"
@@ -343,7 +343,7 @@ other = "Warm, orderly classrooms with clear routines — students greeted by na
 [model_plan_h2]
 other = "Our launch plan"
 [model_plan_lead]
-other = "Bridge opens with 200 students and adds two grades each year — building strong early-elementary foundations and a clear middle-school pathway toward college readiness, all the way to full K–12."
+other = "Bridge plans to open with 200 students and add two grades each year — building strong early-elementary foundations and a clear middle-school pathway toward college readiness, all the way to full K–12."
 [model_y1_yr]
 other = "Year 1 · Fall 2028"
 [model_y1_p]
