@@ -26,13 +26,13 @@ other = "View all news"
 
 # ── Shared shell (util bar, nav, footer) ──
 [site_description]
-other = "A tuition-free public charter school opening Fall 2027 in Yakima, Washington. Proving the possible — every child, college bound."
+other = "A tuition-free public charter school opening Fall 2028 in Yakima, Washington. Proving the possible — every child, college bound."
 
 [util_pill]
 other = "Now forming"
 
 [util_msg]
-other = "Opening Fall 2027 in Yakima, Washington · Founding grades K &amp; 6"
+other = "Opening Soon in Yakima -- Launch Planned for Fall 2028 · Founding grades K &amp; 6"
 
 [nav_about]
 other = "About"
@@ -53,7 +53,7 @@ other = "Contact"
 other = "Join the list"
 
 [footer_blurb]
-other = "A nonprofit public charter school opening Fall 2027 in Yakima, Washington — proving the possible for every student."
+other = "A nonprofit public charter school opening Fall 2028 in Yakima, Washington — proving the possible for every student."
 
 [footer_explore]
 other = "Explore"
@@ -100,7 +100,7 @@ other = "Join our interest list"
 [home_hero_cta2]
 other = "See the model"
 [home_hero_meta1]
-other = "Opening Fall 2027"
+other = "Opening Soon in Yakima -- Launch Planned for Fall 2028"
 [home_hero_meta2]
 other = "Yakima, Washington"
 [home_hero_meta3]
@@ -192,7 +192,7 @@ other = "Yes — Bridge is a tuition-free, open-enrollment public charter school
 [home_faq_q2]
 other = "When and where will Bridge open?"
 [home_faq_a2]
-other = "Bridge opens in Fall 2027 in Yakima, Washington, beginning with kindergarten and sixth grade."
+other = "Bridge opens in Fall 2028 in Yakima, Washington, beginning with kindergarten and sixth grade."
 [home_faq_q3]
 other = "Which grades will you serve?"
 [home_faq_a3]
@@ -200,7 +200,7 @@ other = "We launch with kindergarten and sixth grade — 200 students total — 
 [home_faq_q4]
 other = "How can my family stay informed?"
 [home_faq_a4]
-other = "The best first step is joining our interest list. We'll share enrollment details, info sessions, and key dates directly with you as we approach our Fall 2027 opening."
+other = "The best first step is joining our interest list. We'll share enrollment details, info sessions, and key dates directly with you as we approach our Fall 2028 opening."
 [home_faq_q5]
 other = "How can I support Bridge?"
 [home_faq_a5]
@@ -345,7 +345,7 @@ other = "Our launch plan"
 [model_plan_lead]
 other = "Bridge opens with 200 students and adds two grades each year — building strong early-elementary foundations and a clear middle-school pathway toward college readiness, all the way to full K–12."
 [model_y1_yr]
-other = "Year 1 · Fall 2027"
+other = "Year 1 · Fall 2028"
 [model_y1_p]
 other = "200 students — 100 in kindergarten, 100 in sixth grade."
 [model_y2_yr]
@@ -469,7 +469,7 @@ other = "Use the form — a member of our team will reply."
 [contact_info_open_h]
 other = "Opening"
 [contact_info_open_p]
-other = "Fall 2027 · Founding grades K &amp; 6"
+other = "Fall 2028 · Founding grades K &amp; 6"
 [contact_info_follow_h]
 other = "Follow along"
 [contact_help_h2]
@@ -501,7 +501,7 @@ other = "Read"
 [news_sub_h3]
 other = "Stay in the loop"
 [news_sub_p]
-other = "Get announcements and key dates by email as we approach our Fall 2027 opening."
+other = "Get announcements and key dates by email as we approach our Fall 2028 opening."
 [news_sub_email_ph]
 other = "Your email address"
 [news_sub_btn]
@@ -523,7 +523,7 @@ other = "Thank you!"
 [thanks_sub]
 other = "Your message is on its way — we'll be in touch soon."
 [thanks_body]
-other = "Thanks for reaching out to Bridge Public Schools. A member of our team will get back to you. As we approach our Fall 2027 opening in Yakima, we'll share enrollment details, info sessions, and key dates."
+other = "Thanks for reaching out to Bridge Public Schools. A member of our team will get back to you. As we approach our Fall 2028 opening in Yakima, we'll share enrollment details, info sessions, and key dates."
 [thanks_btn_home]
 other = "Back to home"
 [thanks_btn_news]
