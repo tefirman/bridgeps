@@ -501,7 +501,7 @@ other = "Leer"
 [news_sub_h3]
 other = "Manténgase al tanto"
 [news_sub_p]
-other = "Reciba anuncios y fechas clave por correo a medida que se acerca la apertura en otoño de 2028."
+other = "Reciba anuncios y fechas clave por correo a medida que se acerca la apertura prevista para otoño de 2028."
 [news_sub_email_ph]
 other = "Su correo electrónico"
 [news_sub_btn]
@@ -523,7 +523,7 @@ other = "¡Gracias!"
 [thanks_sub]
 other = "Su mensaje está en camino — nos pondremos en contacto pronto."
 [thanks_body]
-other = "Gracias por comunicarse con Bridge Public Schools. Un miembro de nuestro equipo le responderá. A medida que se acerca nuestra apertura en otoño de 2028 en Yakima, compartiremos detalles de inscripción, sesiones informativas y fechas clave."
+other = "Gracias por comunicarse con Bridge Public Schools. Un miembro de nuestro equipo le responderá. A medida que se acerca nuestra apertura prevista para otoño de 2028 en Yakima, compartiremos detalles de inscripción, sesiones informativas y fechas clave."
 [thanks_btn_home]
 other = "Volver al inicio"
 [thanks_btn_news]
